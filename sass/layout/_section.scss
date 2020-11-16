@@ -1,0 +1,97 @@
+.section{
+    position: relative;
+    background: $color-grey-light-1;
+    height: auto;
+    padding-bottom: 10rem;
+
+    @include respond(big-desktop){ height: auto; }
+    
+    // @include respond(tab-land){ height: 205vh; }
+
+    // @include respond(tab-port){ height: 190vh; }
+
+    // @include respond(smallest){ height: 175vh; }
+
+    @include respond(phone){  
+        height: 250vh;
+        background-color: #ffffff;
+    }
+
+    &__wave-background{
+        height: 3rem;
+        width: 100%;
+        background-image: url(../../img/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -2.8rem;
+        position: absolute;
+
+
+        @include respond(phone){ display: none; }
+    }
+
+    &__center-elements{  
+        width: 100%;   
+        // position: absolute;
+        // margin-top: -11rem;
+        
+        & :not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+
+        @include respond(tab-land){ margin-top: -15rem; }
+
+        @include respond(phone){ margin-top: 0; }
+        
+    }
+
+
+    &__link{
+        // position: absolute;
+        margin-top: -15rem;
+        left: 50%;
+        transform: translate(-50%);
+
+        i{
+            font-size: 2.5rem;
+            color: $color-yellow;
+            border: 2px solid $color-yellow;
+            padding:5px 1rem;
+            border-radius: 100%;
+        }
+    }
+
+    &__main{
+        width: 60%;
+        height: auto;
+        border-radius: 4rem;
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: .6);
+        background-color: white;
+        margin-top: -10rem;
+        z-index: 9999;
+        margin-bottom: 10rem;
+        padding: 8rem 0;
+        animation: moveinbottom 2s ease-in-out 4.5s;
+        animation-fill-mode: backwards;
+        // animation-timing-function: ease-in-out;
+        
+
+        @include respond(big-desktop){ height: auto; }
+
+        @include respond(tab-land){ height: 200vh; }
+
+        @include respond(tab-port){ height: 185vh; }
+
+        @include respond(smallest){ height: 170vh; }
+ 
+        @include respond(phone){  
+            width: 90%;
+            border-radius: 0%;
+            box-shadow: none;
+            height: 245vh;
+            animation: none;
+        }
+    }
+    
+}

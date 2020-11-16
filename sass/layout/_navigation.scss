@@ -1,0 +1,111 @@
+.navigation {
+     height: 7rem;
+     width: 100%;
+     background-color: #ffffff;
+     padding: 1rem;
+     border-bottom: 1rem solid $color-grey-light-2;
+     color: $color-grey-dark-2;
+     
+
+     @include respond(phone){ 
+          height: 11rem; 
+          animation: none;
+     }
+
+     &.homenav{
+          animation: increaseOpacity .9s ease-in-out 5.2s;
+          animation-fill-mode: backwards;
+
+          .navigation__logo{
+               animation: increaseOpacity .9s ease-in-out 5.5s;
+               animation-fill-mode: backwards;
+     
+               @include respond(phone){  
+                    animation: increaseOpacity .9s ease-in-out ;
+               }               
+          }
+     }
+
+    
+     &__main-logo{
+          @include respond(phone){ flex-direction: column !important; }
+     }
+
+     &__logo{
+          height: 5.5rem;
+          width: 5.5rem; 
+     }
+     
+     &__nav{
+          flex: 0 0 45%;
+     
+          @include respond(phone){ display: none; }   
+     }
+     
+     &__item{
+          list-style: none;
+          width: 13rem;
+          height: 3.2rem;
+          text-align: center;
+          border-radius: 1rem;
+          transition: all .6s;
+
+          &:hover{
+               background-color: $color-primary;
+          }
+     }
+
+     &__item:hover &__link{
+          color: #ffffff;
+     }
+     
+     &__link{
+          text-decoration: none;
+          color: $color-grey-dark-2;
+          font-size: $default-font-size;
+          font-weight: 700;
+          transition: all .3s;
+     } 
+     
+     &__user{
+          @include respond(phone){ display: none !important; }
+     }
+
+     &__user-photo{     
+          height: 3rem;
+          width: 2rem;
+
+          @include respond(phone){ display: none; }
+     }
+     
+     &__text{
+          font-size: $default-font-size;
+          font-weight:700;
+          padding-right: 1rem;
+          color: #707070;
+
+          @include respond(phone){ display: none; }
+     }
+     
+     &__hamberger-menu{
+          display: none;
+
+          @include respond(phone){ display: inline; }
+     }
+
+     &__menu-logo{
+          height: 3.5rem;
+          width: 3.5rem;
+          display: none;
+
+          @include respond(phone){ display: inline; }
+     }
+
+     &__headphone-logo{
+          height: 3.5rem;
+          width: 3.5rem;
+          display: none;
+
+          @include respond(phone){ display: inline; }
+     }
+ }

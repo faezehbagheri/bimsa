@@ -1,0 +1,102 @@
+.header{
+    width: 100%;
+    
+    position: relative;
+
+    @include respond(phone){ background-image: none; }
+
+    &.homepage{
+        height: 97vh;
+        @include set-background(url(../../img/ID625918.png), cover);
+        background-attachment: fixed;        
+    }
+
+    &__animation-logo{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        opacity: 0;
+
+        animation: change-opacity 4s ease-in
+        ,moveToTopRight 2s ease 4s;
+
+        @include respond(phone){
+            animation: none;
+        }
+    }
+    
+
+    // قسمتی که باکس وسطی قرار دارد
+    &__main{
+        width: 60%;
+        height: 45rem;
+        position: relative;
+        top: 5%;
+        border-top: 5rem solid $color-primary;
+        border-radius: 1.6rem 1.6rem 3.5rem 3.5rem;
+        overflow: hidden;        
+        animation: increaseOpacity .9s ease-in-out 5s;
+        animation-fill-mode: backwards;
+
+        @include respond(tab-land){ top: 15%; }
+
+        @include respond(smallest){ height: 50rem; }
+        
+        @include respond(big-desktop){ 
+            top: 8%;
+            height: 52rem;
+        }
+
+        @include respond(phone){
+            width: 85%;
+            top: 2%;
+            height: 85%;
+            animation: increaseHeight 2s ease ;
+        }
+
+    }
+
+    &__item{
+        width: 25%;
+        padding: 2rem;
+        background-color: rgba($color: rgb(246, 246, 246), $alpha: 0.8);
+        border: 1px solid $color-primary;
+        transition: all .4s;
+
+        &:hover{
+            background-color: rgb(246, 246, 246);
+            & > *{
+                transform: scale(1.2);
+            }
+        }
+
+        @include respond(phone){ width: 50%; }
+    }
+
+    &__photo{
+        height: 6rem;
+        width: 7rem;
+        transition: all .4s;
+
+        @include respond(big-desktop){ 
+            height: 7rem;
+            width: 8rem; 
+        }
+    }
+
+    &__text{
+        font-size: $default-font-size;
+        font-weight: 700;
+        color: $color-primary;
+        padding: 2.2rem 0;
+        transition: all .6s;
+
+        animation: moveToBottom 1.9s ease-in-out 5.3s;
+        animation-fill-mode: backwards;
+
+        @include respond(phone){
+            animation: moveToBottom 1.9s ease-in-out ;
+        }
+    }
+}

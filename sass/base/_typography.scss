@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir.eot');
+    src: url('Vazir.eot?#iefix') format('embedded-opentype'),
+    url('Vazir.woff') format('woff'),
+    url('Vazir.ttf') format('truetype');
+    font-weight: normal;           
+}
+
+body {
+    line-height: 1.7;
+    color: $color-grey-dark;
+    font-family: Vazir;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    color: $color-grey-dark-2;
+}
+
+.bimsa{   
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-primary;
+    padding-right: 1rem;
+
+    
+   @include respond(phone){ 
+        font-size: 2.5rem;
+        padding-right: 0;
+        color: $color-grey-dark-2;
+   }
+}
+
+.heading-primary{
+    font-size: 2.6rem;
+    font-weight: 100;
+    color: $color-primary;
+    text-align: center;
+
+
+   @include respond(phone){ color: $color-grey-dark-2; }
+}
+
+.heading-scondary{
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: $color-grey-dark-2;
+}

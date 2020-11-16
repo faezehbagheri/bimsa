@@ -1,0 +1,116 @@
+.navigation-mobile{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: .9);
+    position: fixed;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    display: none;
+
+    @include respond(phone-small){ display: inline; }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content{
+        visibility: visible;
+        transform: translate(0);
+    }
+
+    &__content{
+        width: 85%;
+        height: 100vh;
+        transform: translate(100% , 0);
+        background-color: #ffffff;
+        visibility: hidden;
+        transition: all .6s;
+    }
+
+    &__header{
+        height: 23rem;
+        width: 100%;
+        background-image: url(../../img/blue.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+    
+    }
+
+    &__login-btn{
+        height: 7rem;
+        width: 25rem;
+        border:1.5px solid $color-grey-dark-2;
+        border-radius: 1.5rem;
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        transform: translate(-35% , -40%);
+        font-size: 3rem;
+        font-weight: 700;
+        color: $color-grey-dark-2;
+
+        @include respond(phone-small){  
+            height: 5rem;
+            width: 20rem;
+            top: 25%;
+        }
+    }
+
+    &__close{
+        float: right;
+        margin: 2rem;
+        transition: all 1s;
+    }
+
+    &__close:active &__content{
+        transform: translate(100% , 0);
+    }
+
+    &__nav{
+        width: 100%;
+        direction: rtl;
+        height: 90vh;
+        overflow: scroll;
+        
+        &::-webkit-scrollbar {
+            width: 2.5rem;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $color-yellow-light;
+            height: 90%; 
+            border-top-right-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+        }
+
+        @include respond(phone-small){ margin-top: -5rem; }
+        
+    }
+
+    &__item{
+        margin: 4rem 2.5rem;
+        direction: ltr;
+    }
+
+    &__icon{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-grey-dark;
+        padding-right: 2rem;
+    }
+
+    &__separator{
+        border-top: 2px solid $color-primary;
+        width: 100%;
+    }
+
+}

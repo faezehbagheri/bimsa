@@ -1,0 +1,177 @@
+.bime-info{
+    width: 60%;
+    height: auto;
+    border-radius: 4rem;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .6);
+    background-color: white;
+    // position: absolute;
+    margin-top: -7rem;
+    z-index: 9999;
+    margin-bottom: 10rem;
+
+    &__link{
+        position: absolute;
+        margin-top: -7rem;
+        left: 50%;
+        transform: translate(-50%);
+
+        i{
+            font-size: 2.5rem;
+            color: $color-yellow;
+            border: 2px solid $color-yellow;
+            padding:5px 1rem;
+            border-radius: 100%;
+        }
+    }
+
+    &__multipleTabs{
+        width: 90%;
+        margin-top: 2rem;
+        background-color: $color-primary;
+        height: 7rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: .3);
+
+        a{
+            cursor: pointer;
+        }
+    }
+
+    &__label{
+        font-size: 1.8rem;
+        color: white;
+        width: 20rem;
+        padding: 8px 0;
+        border-radius: 1rem;
+        text-align: center;
+        transition: all .3s;
+    }
+
+    &__tabcontent{
+        margin: 5rem 0;
+        width: 90%;
+        height: 80%;
+        text-align: right;
+        padding: 0 2.5rem;
+        transition: all .3s;
+
+
+        p{
+            font-size: 1.6rem;
+            color: $color-grey-dark-2;
+            margin-top: 1rem;
+        }
+    }
+
+    &__question{
+        width: 95%;
+        padding-bottom: 1rem;
+        margin: 2rem 0;
+        border-bottom: 2px solid $color-primary;
+        position: relative;
+        transition: all .7s;
+
+        i{
+            font-size: 3rem;
+            background-color: white;
+            color: $color-primary;
+            border-radius: 100%;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2{
+            font-size: 2rem;
+            font-weight: 600;
+            color: $color-grey-dark-2;
+        }
+
+        span{
+            display: inline-block;
+            width: 40%;
+            height: 5px;
+            background-color: $color-yellow-light;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div{
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+
+        p{
+            height: 0;
+            overflow: hidden;
+            transition: all .7s;
+        }
+    }
+
+    &__moshavere{
+
+        div{
+            width: 50%;
+            margin: 2rem 1rem;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        input, textarea {
+            padding: 1.5rem;
+            border: 1px solid $color-primary;
+            border-radius: 1rem;
+            margin-bottom: 10px;
+            width: 80%;
+            box-sizing: border-box;
+            color: #2C3E50;
+            font-size: 13px;
+            text-align: right;
+            margin: 1rem 0;
+            outline: none;
+            font-size: 1.6rem;
+        }
+        
+        button{
+            padding: 1.5rem;
+            border: none;
+            background-color: $color-primary;
+            color: white;
+            border-radius: 1rem;
+            margin-bottom: 10px;
+            width: 50%;
+            text-align: center;
+            margin: 1rem 0;
+            outline: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        textarea{
+            resize: none;
+        }
+    }
+
+}
+.label-active{
+    background-color: $color-yellow-light;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .23);
+}
+
+.show-answer{
+    // height: auto;
+    overflow: visible;
+
+    p{
+        overflow: visible;
+        height: 20rem;
+    }
+}

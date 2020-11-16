@@ -1,0 +1,159 @@
+.footer{
+    position: relative;
+    background: $color-grey-light-1;
+    top: 100%;
+    z-index: 9999;
+    
+
+    // قسمتی که موج بالای فوتر قرار دارد و لگو بیمسا
+    &__top-part{
+        width: 100%;
+        height: 20rem;
+        background-image: url(../../img/footer.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+        @include respond(tab-port){
+            background-position: center;
+        }
+
+        
+        @include respond(big-desktop){ height: 25rem; }
+
+        @include respond(phone){
+            background-image: linear-gradient($color-primary-dark-1 0%,
+                                            $color-primary-dark-1 50%,
+                                            $color-primary-dark-2 50%
+            );
+            height: 5rem;
+
+            &::after{
+                content: "بیمسا";
+                font-size: 2.5rem;
+                color: #fff;
+                position: absolute;
+                top: 5%;
+            }
+        }
+    }
+
+    // لوگو بیمسا
+    &__logo{
+        height: 14rem;
+        width: 12rem;
+        position: absolute;
+        top: 8%;
+
+        @include respond(tab-land){ top: 4%; }
+
+        @include respond(smallest){ display: none; }
+    }
+
+    // قسمتی اصلی فوتر در دسکتاپ 
+    &__main-desktop{
+        height: 44vh;
+        width: 100%;
+        background-color: $color-primary;
+        width: 100%;
+
+
+        @include respond(tab-land){ height: 35vh; }
+
+        @include respond(phone){ display: none !important; }
+
+        
+        @include respond(big-desktop){ height: 35vh; }
+    }
+
+    &__list{
+        list-style-type: none;
+        text-align: center;
+        margin: -9rem 0;
+
+        @include respond(phone){ margin: 0; }
+    }
+
+    &__item{
+        padding: 1rem;
+    }
+
+    &__link,
+    &__link:active,
+    &__link:visited{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+
+    // قسمت اصلی فوتر در موبایل
+    &__main-mobile{
+        display: none !important;
+
+        @include respond(phone){
+            display: flex !important;
+            height: 22vh;
+            width: 100%;
+            background-color: $color-primary;
+            width: 100%;
+        }
+    }
+
+    // لوگوهای نماداعتماد و رسانه دیجیتال
+    &__main-logo{
+        &-photo{
+            height: 12rem;
+            width: 13rem;
+            margin: 3rem 1rem;
+        }
+    }
+
+    // لوگوهای نماداعتماد و رسانه دیجیتال در موبایل
+    &__main-logo-mobile{
+        &-photo{
+            height: 10rem;
+            width: 11rem;
+        }
+    }
+
+
+    // لوگوهای توییتر اینستا و تلگرام
+    &__social-logo-box{
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        margin: 0 1.5rem;
+    }
+
+    // قسمت انتهایی فوتر
+    &__legal{
+        height: 5rem;
+        width: 100%;
+        background-color: #F7D800;
+        border-radius: 6rem 6rem 0 0;
+        margin-top: -5rem;
+        text-align: right;
+
+        &-text{
+            font-size: $default-font-size;
+            font-weight: 100;
+            color: #fff;
+            padding: .7rem 10rem;
+
+            @include respond(phone){
+                margin: 0;
+                padding: .6rem 4rem;
+                font-size: 1.4rem;
+            }
+        }
+
+
+        @include respond(phone){
+            margin: 0;
+            background-color: $color-primary;
+            border-radius:0;
+            border-top: 1px solid #fff;
+        }
+    }
+}
