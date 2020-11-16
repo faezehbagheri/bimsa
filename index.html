@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <script src="/js/jquery.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/jqueryFunction.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Bimsa</title>
+</head>
+
+<body>
+
+    <header class="header homepage flex column justi-start align-center" id="header">
+        <!-- فقط برای انیمیشن لوگو -->
+        <img class="header__animation-logo" src="img/kisspng-logo-coreldraw-cdr-cli_ea@2x.png">
+        <!-- منو دسکتاپ -->
+        <nav class="navigation homenav flex r-reverse justi-around align-center">
+            <div class="navigation__hamberger-menu">
+                <a href="#menu"><img src="img/menu.png" alt="logo" class="navigation__menu-logo"></a>
+            </div>
+            <div class="navigation__main-logo flex r-reverse justi-center align-center">
+                <img srcset="img/kisspng-logo-coreldraw-cdr-cli_h.png 1x,img/kisspng-logo-coreldraw-cdr-cli_h@2x.png 2x"
+                    alt="logo" class="navigation__logo">
+                <span class="bimsa">بیمسا</span>
+            </div>
+            <div class="navigation__nav">
+                <ul class="navigation__list flex r-reverse justi-between align-center">
+                    <li class="navigation__item"><a href="#" class="navigation__link">انواع بیمه ها</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">فروش</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">بیمه های همکار</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">بلاگ</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="navigation__user flex r-reverse justi-center align-center">
+                <img srcset="img/person.png 1x,img/person@2x.png 2x" alt="user photo" class="navigation__user-photo">
+                <span class="navigation__text">حساب کاربری</span>
+            </div>
+            <img src="img/headphone.png" alt="logo" class="navigation__headphone-logo">
+        </nav>
+
+        <!-- منو موبایل -->
+        <nav class="navigation-mobile flex column justi-around align-end " id="menu">
+            <div class="navigation-mobile__content">
+                <div class="navigation-mobile__header">
+                    <a href="#header"><img class="navigation-mobile__close" src="img/close (1).png"></a>
+                    <button class="navigation-mobile__login-btn">ورود/عضویت</button>
+                </div>
+                <div class="navigation-mobile__nav">
+                    <ul class="navigation-mobile__list">
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_11.png 1x,img/Mask_Group_11@2x.png 2x" alt="bime shakhs sales"><a
+                                class="navigation-mobile__link" href="#">بیمه شخص ثالث</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_13.png 1x,img/Mask_Group_13@2x.png 2x" alt="bime badane"><a
+                                class="navigation-mobile__link" href="#">بیمه بدنه</a></li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_14.png 1x,img/Mask_Group_14@2x.png 2x" alt="bime mosaferti"><a
+                                class="navigation-mobile__link" href="#">بیمه مسافرتی</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_9.png 1x,img/Mask_Group_9@2x.png 2x"
+                                alt="bime darman va corona"><a class="navigation-mobile__link" href="#">بیمه درمان و
+                                کرونا</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_12.png 1x,img/Mask_Group_12@2x.png 2x" alt="bime omr"><a
+                                class="navigation-mobile__link" href="#">بیمه عمر</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_10.png 1x,img/Mask_Group_10@2x.png 2x" alt="bime motor "><a
+                                class="navigation-mobile__link" href="#">بیمه‌ موتور سیکلت</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_15.png 1x,img/Mask_Group_15@2x.png 2x" alt="bime sazmani"><a
+                                class="navigation-mobile__link" href="#">بیمه‌ سازمانی</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_16.png 1x,img/Mask_Group_16@2x.png 2x" alt="bime atash soozi"><a
+                                class="navigation-mobile__link" href="#">بیمه‌ آتش سوزی</a>
+                        </li>
+                        <hr class="navigation-mobile__separator">
+                        <li class="navigation-mobile__item  flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/024---Friendship.png 1x,img/024---Friendship@2x.png 2x" alt="bime motor "><a
+                                class="navigation-mobile__link" href="#">بیمه های همکار</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="img/Page-1.png 1x,img/Page-1@2x.png 2x"
+                                alt="bime sazmani"><a class="navigation-mobile__link" href="#">وبلاگ</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="img/work.png 1x,img/work@2x.png 2x"
+                                alt="bime atash soozi"><a class="navigation-mobile__link" href="#">همکاری با بیمسا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- هدر اصلی -->
+
+        <!-- باکس وسط هدر و معرفی بیمه ها -->
+        <div class="header__main flex justi-center align-stretch wrap">
+            <div class="header__item flex column justi-end align-center">
+                <img srcset="img/Mask_Group_16.png 1x,img/Mask_Group_16@2x.png 2x" alt="bime atash soozi"
+                    class="header__photo">
+                <span class="header__text">بیمه آتش سوزی</span>
+            </div>
+            <div class="header__item flex column justi-end align-center">
+                <img srcset="img/Mask_Group_14.png 1x,img/Mask_Group_14@2x.png 2x" alt="bime mosaferti"
+                    class="header__photo">
+                <span class="header__text">بیمه مسافرتی</span>
+            </div>
+            <div class="header__item flex column justi-end align-center">
+                <img srcset="img/Mask_Group_13.png 1x,img/Mask_Group_13@2x.png 2x" alt="bime badane"
+                    class="header__photo">
+                <span class="header__text">بیمه بدنه</span>
+            </div>
+            <div class="header__item flex column justi-end align-center">
+                <img srcset="img/Mask_Group_11.png 1x,img/Mask_Group_11@2x.png 2x" alt="bime shakhs sales"
+                    class="header__photo">
+                <span class="header__text">بیمه شخص ثالث</span>
+            </div>
+            <div class="header__item flex column justi-end align-center">
+                <img srcset="img/Mask_Group_9.png 1x,img/Mask_Group_9@2x.png 2x" alt="bime darman va corona"
+                    class="header__photo">
+                <span class="header__text">بیمه درمان و کرونا</span>
+            </div>
+            <div class="header__item flex column justi-end align-center">
+                <img srcset="img/Mask_Group_15.png 1x,img/Mask_Group_15@2x.png 2x" alt="bime sazmani"
+                    class="header__photo">
+                <span class="header__text">بیمه سازمانی</span>
+            </div>
+            <div class="header__item flex column justi-end align-center">
+                <img srcset="img/Mask_Group_12.png 1x,img/Mask_Group_12@2x.png 2x" alt="bime omr" class="header__photo">
+                <span class="header__text">بیمه عمر</span>
+            </div>
+            <div class="header__item flex column justi-end align-center">
+                <img srcset="img/Mask_Group_10.png 1x,img/Mask_Group_10@2x.png 2x" alt="bime motor "
+                    class="header__photo">
+                <span class="header__text">بیمه موتور سیکلت</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- دایره ثابت مربوط به تمدید -->
+    <a href="#" class="fixed-circle home fixed-circle--left flex column justi-center align-center">
+        <img srcset="img/service4.png 1x,img/service4@2x.png 2x" alt="tamdid" class="fixed-circle__extension-photo">
+        <span class="fixed-circle__extension-text">تمدید</span>
+    </a>
+    <!-- دایره ثابت مربوط به گفتگو با ما -->
+    <a href="#" class="fixed-circle home fixed-circle--right flex column justi-center align-center">
+        <img srcset="img/service3.png 1x,img/service3@2x.png 2x" alt="coverstion"
+            class="fixed-circle__coverstion-photo">
+        <span class="fixed-circle__coverstion-text">گفتگو با ما</span>
+    </a>
+
+    <main>
+        <div class="section">
+            <!-- عکسی که حالت موج دارد -->
+            <div class="section__wave-background"></div>
+
+            <!-- سکشن وسطی شامل فلش ها و محتوای اصلی سایت -->
+            <div class="section__center-elements flex column justi-center align-center">
+                <!-- محتوای اصلی سایت -->
+                <div class="section__main flex column justi-around align-center" id="section-main">
+                    <a href="#section-main" class='section__link'><i class="fas fa-angle-down"></i></a>
+                    <!-- قسمت معرفی ویژگی های بیمسا -->
+                    <div class="feature flex column justi-between align-center u-margin-top-medium">
+                        <div class="feature__heading flex column justi-between align-center">
+                            <span class="bimsa">بیمسا</span>
+                            <h1 class="heading-primary">بیمه ی آسان <br>سامانه خرید و مقایسه آنلاین بیمه</h1>
+                            <h1 class="heading-primary "></h1>
+                        </div>
+                        <div class="feature__main flex r-reverse justi-around align-start wrap">
+                            <div class="feature__box flex column justi-around align-center">
+                                <img srcset="img/Layer-3.png 1x,img/Layer-3@2x.png 2x" class="feature__photo"
+                                    alt="sadegi">
+                                <span class="feature__text">سادگی در خرید</span>
+                            </div>
+                            <div class="feature__box flex column justi-around align-center">
+                                <img srcset="img/Layer-2.png 1x,img/Layer-2@2x.png 2x" class="feature__photo"
+                                    alt="soraat">
+                                <span class="feature__text">سرعت در صدور</span>
+                            </div>
+                            <div class="feature__box flex column justi-around align-center">
+                                <img srcset="img/Layer-4.png 1x,img/Layer-4@2x.png 2x" class="feature__photo"
+                                    alt="ersale rayegan">
+                                <span class="feature__text">ارسال رایگان</span>
+                            </div>
+                            <div class="feature__box flex column justi-around align-center">
+                                <img srcset="img/Layer-1.png 1x,img/Layer-1@2x.png 2x " class="feature__photo"
+                                    alt="poshtibani">
+                                <span class="feature__text">پشتیبانی در تمام مراحل</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- قسمت یادآور تمدید یا اقساط -->
+                    <div class="reminder flex column justi-around align-center">
+                        <h1 class="heading-scondary">یادآور تمدید یا اقساط بیمه</h1>
+                        <div class="reminder__border-top"></div>
+                        <form class="reminder__main flex r-reverse justi-around align-center wrap">
+                            <div class="reminder__box flex column justi-around align-end">
+                                <label class="reminder__label">نوع بیمه</label>
+                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                            </div>
+                            <div class="reminder__box flex column justi-around align-end">
+                                <label class="reminder__label">نحوه تکرار</label>
+                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                            </div>
+                            <div class="reminder__box flex column justi-around align-end">
+                                <label class="reminder__label">توضیحات یادآور</label>
+                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                            </div>
+                            <div class="reminder__box flex column justi-around align-end">
+                                <label class="reminder__label">تاریخ سررسید</label>
+                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                            </div>
+                            <div class="reminder__box flex column justi-around align-end">
+                                <label class="reminder__label">استان</label>
+                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                            </div>
+                            <div class="reminder__box flex column justi-around align-end">
+                                <label class="reminder__label">شهر</label>
+                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                            </div>
+                            <button class="reminder__btn u-margin-top-medium u-margin-bottom-medium">ثبت</button>
+                        </form>
+                    </div>
+
+                    <!-- قسمت بیمه های همکار -->
+                    <div class="teammate flex column justi-between align-center">
+                        <h1 class="heading-scondary teammate__heading">بیمه همکار</h1>
+                        <div class="teammate__main flex justi-center u-margin-bottom-huge u-margin-top-big">
+
+                            <!-- قسمت مربوط به مدار وسطی -->
+                            <div class="orbit">
+                                <img srcset="img/kisspng-logo-coreldraw-cdr-cli_ea.png 1x,img/kisspng-logo-coreldraw-cdr-cli_ea@2x.png 2x"
+                                    alt="logo" class="orbit__logo">
+                                <div class="orbit__container-small">
+                                    <div class="orbit__circle-small orbit__circle-small--1"></div>
+                                    <div class="orbit__circle-small orbit__circle-small--2"></div>
+                                    <div class="orbit__circle-small orbit__circle-small--3"></div>
+                                </div>
+                                <div class="orbit__half-circle orbit__half-circle--right"><button
+                                        class="orbit__half-circle-btn orbit__half-circle-btn--right"
+                                        onclick="rightState()"></button></div>
+                                <div class="orbit__circle orbit__circle--1 flex column justi-around align-center"><img
+                                        srcset="img/ID11.png 1x,img/ID11@2x.png 2x"></div>
+                                <div class="orbit__half-circle orbit__half-circle--left"><button
+                                        class="orbit__half-circle-btn orbit__half-circle-btn--left"
+                                        onclick="leftState()"></button></div>
+                                <div class="orbit__circle orbit__circle--2 flex column justi-around align-center"><img
+                                        srcset="img/ID18.png 1x,img/ID18@2x.png 2x"></div>
+                                <div class="orbit__circle orbit__circle--3 flex column justi-around align-center"><img
+                                        srcset="img/ID7.png 1x,img/ID7@2x.png 2x"></div>
+                                <div class="orbit__circle orbit__circle--4 flex column justi-around align-center"><img
+                                        srcset="img/ID1.png 1x,img/ID1@2x.png 2x"></div>
+                                <div class="orbit__circle orbit__circle--5 flex column justi-around align-center"><img
+                                        srcset="img/ID14.png 1x,img/ID14@2x.png 2x"></div>
+                                <div class="orbit__circle orbit__circle--6 flex column justi-around align-center"><img
+                                        srcset="img/ID21.png 1x,img/ID21@2x.png 2x"></div>
+                                <div class="orbit__circle orbit__circle--7 flex column justi-around align-center"><img
+                                        srcset="img/ID3.png 1x,img/ID3@2x.png 2x"></div>
+                                <div class="orbit__circle orbit__circle--8 flex column justi-around align-center"><img
+                                        srcset="img/ID6.png 1x,img/ID6@2x.png 2x"></div>
+                            </div>
+                        </div>
+                        <!-- قسمت مربوط به توضیحات درباره هرکدام از بیمه ها -->
+                        <div class="teammate__introduction flex column justi-around align-center">
+                            <p class="teammate__text">بیمه ملت در زمینه فروش تمام محصولات بیمه‌ای فعالیت کرده و با داشتن
+                                8 شعبه و حدود 2000 نمایندگی فعال، خدمات متنوعی ارائه می‌دهد. توانگری مالی بیمه ملت در
+                                رتبه یک قرار دارد. در نتیجه این شرکت توانایی مطلوبی در پرداخت خسارات مورد تعهد داراست.
+                                همچنین بر اساس آخرین گزارش منتشر شده، رضایت مشتریان از بیمه ملت رتبه 10 را کسب کرده و
+                                1.6% فروش کل صنعت بیمه متعلق به این شرکت است.</p>
+                            <button class="teammate__btn">صفحه بیمه</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- فوتر دسکتاپ -->
+        <div class="footer__top-part flex r-reverse justi-center align-center">
+            <img srcset="img/kisspng-logo-coreldraw-cdr-cli_h.png 1x,img/kisspng-logo-coreldraw-cdr-cli_h@2x.png  2x"
+                alt="big logo" class="footer__logo">
+        </div>
+        <div class="footer__main-desktop flex r-reverse justi-around align-start">
+            <div class="footer__right-side">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه درمان تکمیلی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه موتور سیکلت</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه عمر</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link"> بیمه مسافرتی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه آتش سوزی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه بدنه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه شخص ثالث</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-side flex column justi-around align-center">
+                <div class="footer__main-logo flex r-reverse justi-around align-center">
+                    <img srcset="img/_temp-logo-samandehi.png 1x, img/_temp-logo-samandehi@2x.png 2x"
+                        class="footer__main-logo-photo">
+                    <img srcset="img/_temp-logo-enamad.png 1x, img/_temp-logo-enamad@2x.png 2x"
+                        class="footer__main-logo-photo">
+                </div>
+                <div class="footer__social-logo flex r-reverse justi-around align-center">
+                    <a href="#" class="footer__social-logo-box"><img srcset="img/twitter.png 1x,img/twitter@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img srcset="img/twitter.png 1x,img/twitter@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img
+                            srcset="img/instagram-sketched.png 1x,img/instagram-sketched@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img srcset="img/telegram.png 1x,img/telegram@2x.png 2x"></a>
+                </div>
+            </div>
+            <div class="footer__left-side">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link"> تماس با ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">درباره ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">سوالات متداول</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">شرایط و قوانین</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">ورود به پنل</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- فوتر موبایل -->
+        <div class="footer__main-mobile flex r-reverse justi-around align-center">
+            <div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">خانه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با بیمسا</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">خانه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با بیمسا</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                </ul>
+            </div>
+            <div class="footer__main-logo-mobile flex r-reverse justi-around align-center">
+                <img srcset="img/_temp-logo-samandehi.png 1x, img/_temp-logo-samandehi@2x.png 2x"
+                    class="footer__main-logo-mobile-photo">
+                <img srcset="img/_temp-logo-enamad.png 1x, img/_temp-logo-enamad@2x.png 2x"
+                    class="footer__main-logo-mobile-photo">
+            </div>
+        </div>
+        <div class="footer__legal">
+            <p class="footer__legal-text">تمام حقوق این سایت متعلق به شرکت بیمسا است</p>
+        </div>
+    </footer>
+</body>
+
+</html>

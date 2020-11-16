@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/jqueryFunction.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <link href="js/select2.min.css" rel="stylesheet" />
+    <script src="js/select2.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+    <title>Bimsa</title>
+</head>
+
+<body>
+
+    <header class="header homepage flex column justi-start align-center" id="header">
+        <!-- منو دسکتاپ -->
+        <nav class="navigation flex r-reverse justi-around align-center">
+            <div class="navigation__hamberger-menu">
+                <a href="#menu"><img src="img/menu.png" alt="logo" class="navigation__menu-logo"></a>
+            </div>
+            <div class="navigation__main-logo flex r-reverse justi-center align-center">
+                <img srcset="img/kisspng-logo-coreldraw-cdr-cli_h.png 1x,img/kisspng-logo-coreldraw-cdr-cli_h@2x.png 2x"
+                    alt="logo" class="navigation__logo">
+                <span class="bimsa">بیمسا</span>
+            </div>
+            <div class="navigation__nav">
+                <ul class="navigation__list flex r-reverse justi-between align-center">
+                    <li class="navigation__item"><a href="#" class="navigation__link">انواع بیمه ها</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">فروش</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">بیمه های همکار</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">بلاگ</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="navigation__user flex r-reverse justi-center align-center">
+                <img srcset="img/person.png 1x,img/person@2x.png 2x" alt="user photo" class="navigation__user-photo">
+                <span class="navigation__text">حساب کاربری</span>
+            </div>
+            <img src="img/headphone.png" alt="logo" class="navigation__headphone-logo">
+        </nav>
+        <!-- منو موبایل -->
+        <nav class="navigation-mobile flex column justi-around align-end " id="menu">
+            <div class="navigation-mobile__content">
+                <div class="navigation-mobile__header">
+                    <a href="#header"><img class="navigation-mobile__close" src="img/close (1).png"></a>
+                    <button class="navigation-mobile__login-btn">ورود/عضویت</button>
+                </div>
+                <div class="navigation-mobile__nav">
+                    <ul class="navigation-mobile__list">
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_11.png 1x,img/Mask_Group_11@2x.png 2x" alt="bime shakhs sales"><a
+                                class="navigation-mobile__link" href="#">بیمه شخص ثالث</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_13.png 1x,img/Mask_Group_13@2x.png 2x" alt="bime badane"><a
+                                class="navigation-mobile__link" href="#">بیمه بدنه</a></li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_14.png 1x,img/Mask_Group_14@2x.png 2x" alt="bime mosaferti"><a
+                                class="navigation-mobile__link" href="#">بیمه مسافرتی</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_9.png 1x,img/Mask_Group_9@2x.png 2x"
+                                alt="bime darman va corona"><a class="navigation-mobile__link" href="#">بیمه درمان و
+                                کرونا</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_12.png 1x,img/Mask_Group_12@2x.png 2x" alt="bime omr"><a
+                                class="navigation-mobile__link" href="#">بیمه عمر</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_10.png 1x,img/Mask_Group_10@2x.png 2x" alt="bime motor "><a
+                                class="navigation-mobile__link" href="#">بیمه‌ موتور سیکلت</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_15.png 1x,img/Mask_Group_15@2x.png 2x" alt="bime sazmani"><a
+                                class="navigation-mobile__link" href="#">بیمه‌ سازمانی</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/Mask_Group_16.png 1x,img/Mask_Group_16@2x.png 2x" alt="bime atash soozi"><a
+                                class="navigation-mobile__link" href="#">بیمه‌ آتش سوزی</a>
+                        </li>
+                        <hr class="navigation-mobile__separator">
+                        <li class="navigation-mobile__item  flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon"
+                                srcset="img/024---Friendship.png 1x,img/024---Friendship@2x.png 2x" alt="bime motor "><a
+                                class="navigation-mobile__link" href="#">بیمه های همکار</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="img/Page-1.png 1x,img/Page-1@2x.png 2x"
+                                alt="bime sazmani"><a class="navigation-mobile__link" href="#">وبلاگ</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="img/work.png 1x,img/work@2x.png 2x"
+                                alt="bime atash soozi"><a class="navigation-mobile__link" href="#">همکاری با بیمسا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="form-specs">
+            <h2>بیمه شخص ثالث</h2>
+            <div class="flex r-reverse align-center justi-center" style="height: 49em;">
+                <!-- شماتیک ماشین -->
+                <div class="form-specs__schematic flex column align-center justi-around">
+                    <img src="img/Group261.png">
+                    <span>استعلام قیمت</span>
+                    <nav class="form-specs__multipleTabs tab flex">
+                        <a data-trigger="marhale-2" class="flex align-center form-specs__left-link active"><i
+                                class="fas fa-angle-left"></i>مرحله بعد</a>
+                        <a data-trigger="marhale-1" class="flex align-center form-specs__right-link ">مرحله قبل<i
+                                class="fas fa-angle-right"></i></a>
+                    </nav>
+                </div>
+                <!-- سوالات مربوط به بیمه  -->
+                <div class="form-specs__content flex r-reverse justi-around align-center" id="marhale-1">
+                    <div class="form-specs__tabs flex column align-center justi-around">
+                        <div class="flex column align-end">
+                            <label>نوع وسیله نقلیه </label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> سواری</option>
+                                    <option value="vanet"> وانت </option>
+                                    <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                    <option value="kamion"> کامیون </option>
+                                    <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                    <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-end">
+                            <label>مدل خودرو</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> پژو 405</option>
+                                    <option value="vanet"> پژو 206 </option>
+                                    <option value="van"> پژو 207 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-end">
+                            <label>سال ساخت </label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="99" selected> 2020-1399</option>
+                                    <option value="98"> 2019-1398 </option>
+                                    <option value="97"> 2018-1397 </option>
+                                    <option value="96"> 2017-1396 </option>
+                                    <option value="95"> 2016-1395 </option>
+                                    <option value="94"> 2015-1394 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-end">
+                            <label>تاریخ سررسید </label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> سواری</option>
+                                    <option value="vanet"> وانت </option>
+                                    <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                    <option value="kamion"> کامیون </option>
+                                    <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                    <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- برند خودروها -->
+                    <div class="form-specs__brands">
+                        <div class="form-specs__brands-list flex r-reverse align-center wrap">
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/12@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/19@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/23@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/67@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/71@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/90@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/93@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/101@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/41@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/42@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/43@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/44@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/45@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/46@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/12@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                            <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                <img src="img/12@2x.png">
+                                <span>مزدا</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-specs__content flex r-reverse justi-around align-end" id="marhale-2">
+                    <div class="form-specs__tabs flex r-reverse align-center justi-around wrap">                        
+                        <div class="flex column align-center justi-around " style="height: 100%;">
+                            <div class="form-specs__checkbox flex r-reverse justi-start align-center" style="width: 90%;">
+                                <span>بیمه نامه خسارت دارد</span>
+                                <div>
+                                    <input id="toggle" type="checkbox" />
+                                    <label for="toggle"></label>
+                                </div>
+                            </div>
+                            <div class="flex column align-end">
+                                <label>درصد تخفیف بیمه‌نامه قبلی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="99" selected> 2020-1399</option>
+                                        <option value="98"> 2019-1398 </option>
+                                        <option value="97"> 2018-1397 </option>
+                                        <option value="96"> 2017-1396 </option>
+                                        <option value="95"> 2016-1395 </option>
+                                        <option value="94"> 2015-1394 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-end">
+                                <label>درصد تخفیف حوادث راننده</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="99" selected> 2020-1399</option>
+                                        <option value="98"> 2019-1398 </option>
+                                        <option value="97"> 2018-1397 </option>
+                                        <option value="96"> 2017-1396 </option>
+                                        <option value="95"> 2016-1395 </option>
+                                        <option value="94"> 2015-1394 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-end">
+                                <label>مدت اعتبار بیمه نامه جدید</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="99" selected> 2020-1399</option>
+                                        <option value="98"> 2019-1398 </option>
+                                        <option value="97"> 2018-1397 </option>
+                                        <option value="96"> 2017-1396 </option>
+                                        <option value="95"> 2016-1395 </option>
+                                        <option value="94"> 2015-1394 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="" style="height: 100%;">
+                        <div class="flex column align-center justi-around" style=" display: none; height: 34rem;">
+                            <div class="flex column align-end">
+                                <label>تعداد خسارت جانی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="99" selected> 2020-1399</option>
+                                        <option value="98"> 2019-1398 </option>
+                                        <option value="97"> 2018-1397 </option>
+                                        <option value="96"> 2017-1396 </option>
+                                        <option value="95"> 2016-1395 </option>
+                                        <option value="94"> 2015-1394 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-end">
+                                <label>تعداد خسارت مالی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="99" selected> 2020-1399</option>
+                                        <option value="98"> 2019-1398 </option>
+                                        <option value="97"> 2018-1397 </option>
+                                        <option value="96"> 2017-1396 </option>
+                                        <option value="95"> 2016-1395 </option>
+                                        <option value="94"> 2015-1394 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-end">
+                                <label>تعداد خسارت راننده</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="99" selected> 2020-1399</option>
+                                        <option value="98"> 2019-1398 </option>
+                                        <option value="97"> 2018-1397 </option>
+                                        <option value="96"> 2017-1396 </option>
+                                        <option value="95"> 2016-1395 </option>
+                                        <option value="94"> 2015-1394 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- برند بیمه ها -->
+                        <div class="form-specs__brands" id="bime-brand" style="width: 100%;">
+                            <div class="form-specs__brands-list flex r-reverse align-center wrap">
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime01.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime02.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime03.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime04.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime05.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime06.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime07.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime08.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime09.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime10.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime12.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime01.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime02.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime03.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime04.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                                <a href="#" class="form-specs__brands-item flex column align-center justi-center">
+                                    <img src="img/bime05.png">
+                                    <span>بیمه ایران</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- دایره ثابت مربوط به تمدید -->
+    <a href="#" class="fixed-circle fixed-circle--left flex column justi-center align-center">
+        <img srcset="img/service4.png 1x,img/service4@2x.png 2x" alt="tamdid" class="fixed-circle__extension-photo">
+        <span class="fixed-circle__extension-text">تمدید</span>
+    </a>
+    <!-- دایره ثابت مربوط به گفتگو با ما -->
+    <a href="#" class="fixed-circle fixed-circle--right flex column justi-center align-center">
+        <img srcset="img/service3.png 1x,img/service3@2x.png 2x" alt="coverstion"
+            class="fixed-circle__coverstion-photo">
+        <span class="fixed-circle__coverstion-text">گفتگو با ما</span>
+    </a>
+
+    <main>
+        <div class="section flex justi-center" id="section-main">
+            <!-- عکسی که حالت موج دارد -->
+            <div class="section__wave-background"></div>
+            <div class='bime-info flex column align-center'>
+                <a href="#section-main" class='bime-info__link'><i class="fas fa-angle-down"></i></a>
+                <h2 class="heading-scondary u-margin-top-medium">بیمه شخص ثالث چیست؟</h2>
+                <nav class="bime-info__multipleTabs tabs u-margin-top-medium flex r-reverse align-center justi-around">
+                    <a data-trigger="content01" class="bime-info__label label-active">درباره بیمه شخص ثالث</a>
+                    <a data-trigger="content02" class="bime-info__label">سوالات متداول</a>
+                    <a data-trigger="content03" class="bime-info__label">درخواست مشاوره</a>
+                </nav>
+                <div id="content01" class="bime-info__tabcontent">
+                    <p>بیمه شخص ثالث چیست؟ <br>
+                        هرگونه خسارت مالی و جانی وارد شده به اشخاص ثالث در حوادث رانندگی به عهده بیمه شخص ثالث است. بر
+                        اساس قانون، خرید بیمه شخص ثالث برای تمام خودروها اجباری است و نداشتن این بیمه عواقب جبران
+                        ناپذیری برای دارندگان وسائل نقلیه به همراه خواهد داشت.
+
+                        در قرارداد بیمه شخص ثالث، شخص سوم یا ثالث تمام افرادی هستند که در حوادث مرتبط با خودرو، زیان
+                        جانی یا مالی دیده باشند؛ البته در تعریف این بیمه راننده مقصر حادثه، شخص ثالث محسوب نمی‌شود و
+                        برای جبران خسارت‌های جانی راننده مقصر، بیمه حوادث راننده به همراه بیمه‌نامه شخص ثالث ارائه
+                        می‌شود.
+
+                        توجه داشته باشید که بیمه حوادث راننده فقط خسارت‌های جانی وارد شده به راننده (شامل فوت، نقص عضو و
+                        هزینه‌های درمانی) را جبران می‌کند و در برابر خسارت‌های مالی هیچگونه پوششی ارائه نمی‌دهد.
+
+                        چه مواردی تحت پوشش بیمه شخص ثالث قرار می‌گیرد؟
+                        پوشش‌های بیمه شخص ثالث به دو دسته پوشش مالی و جانی تقسیم می‌شود که پوشش جانی این بیمه شامل غرامت
+                        فوت، نقص عضو و هزینه‌های درمانی افراد آسیب دیده در حوادث رانندگی است. در پوشش مالی هم خسارت‌های
+                        مالی وارد شده به خودرو یا اموال افراد زیان دیده (به جز راننده مقصر) جبران می‌شود.
+
+                        سقف پرداخت هزینه‌ها در پوشش جانی بر اساس مبلغ دیه در ماه حرام تعیین می‌شود. سقف پوشش مالی هم در
+                        شرکت‌های مختلف بیمه متفاوت است اما حداقل پوشش مالی تعیین شده توسط بیمه مرکزی در سال 99، 11
+                        میلیون تومان است.
+
+                        حداکثر پوشش مالی در بیشتر شرکت‌های بیمه معادل 40 میلیون تومان است و در بعضی از شرکت‌ها مثل بیمه
+                        شخص ثالث ایران در شرایط خاص تا 220 میلیون تومان هم می‌رسد.
+
+                        مبلغ دیه کامل چقدر است؟ ماه‌های حرام کدامند؟
+                        مبلغ دیه در ابتدای هر سال توسط بیمه مرکزی اعلام می شود. مبلغ دیه در سال 1399 و برای ماه های عادی
+                        330 میلیون و برای ماه های حرام 440 میلیون تومان اعلام شده است. سقف پوشش جانی بیمه شخص ثالث هم به
+                        اندازه ی مبلغ دیه در ماه حرام (440 میلیون تومان) است و حداقل پوشش مالی به اندازه یک چهلم مبلغ
+                        دیه ماه حرام (11 میلیون تومان) در نظر گرفته می‌شود. البته خسارت جانی راننده مقصر بر اساس دیه ماه
+                        غیر حرام (ماه عادی) پرداخت می‌شود.
+                        ماه‌های حرام به ترتیب محرم، رجب، ذی‌القعده و ذی‌الحجه هستند.
+
+                        نرخ بیمه شخص ثالث 99
+                        همانطور که در مطالب بالا اشاره کردیم، حق بیمه پایه شخص ثالث هر ساله توسط بیمه مرکزی تعیین و به
+                        شرکت‌های بیمه ابلاغ می‌شود. نرخ بیمه شخص ثالث سال 99 که انتهای سال گذشته اعلام شد، نسبت به سال
+                        گذشته (سال 98) افزایش قیمت داشته است که دلیل اصلی این افزایش قیمت را می‌توان افزایش نرخ دیه سال
+                        99 دانست.
+                        در جدول زیر نرخ بیمه شخص ثالث 99 در وسایل نقلیه مختلف و بر اساس تعداد سیلندر آن نشان داده شده
+                        است.</p>
+                </div>
+                <div id="content02" class="bime-info__tabcontent flex column align-center">
+                    <div class="bime-info__question" id="question-1">
+                        <h2>چرا باید بیمه شخص ثالث داشته باشیم ؟</h2>
+                        <p>تصور کنید شما در هنگام رانندگی با اتومبیل و یا موتور سیکلت به شخص یا اشخاصی خسارت وارد کنید،
+                            و در آن حادثه مقصر شناخته شوید، طبق قانون شما مسئول جبران این خسارت به زیان‌دیدگان هستید.
+                            بنابراین نیاز به بیمه‌ای دارید تا در هنگام بروز این حوادث در جبران خسارت پشتوانه شما باشد.
+                            ممکن است این خسارت مالی و یا جانی باشد.بر اساس قانون مالک خودرو یا کسی که خودرو در اختیار
+                            اوست باید اقدام به تهیه بیمه شخص ثالث نماید. (در این صورت، این شخص بیمه‌گذار نامیده می‌شود.)
+                        </p>
+                        <div>
+                            <span></span>
+                            <i class="fas fa-times-circle" onclick="showAnswer('#question-1')"></i>
+                        </div>
+                    </div>
+                    <div class="bime-info__question" id="question-2">
+                        <h2>چرا باید بیمه شخص ثالث داشته باشیم ؟</h2>
+                        <p>تصور کنید شما در هنگام رانندگی با اتومبیل و یا موتور سیکلت به شخص یا اشخاصی خسارت وارد کنید،
+                            و در آن حادثه مقصر شناخته شوید، طبق قانون شما مسئول جبران این خسارت به زیان‌دیدگان هستید.
+                            بنابراین نیاز به بیمه‌ای دارید تا در هنگام بروز این حوادث در جبران خسارت پشتوانه شما باشد.
+                            ممکن است این خسارت مالی و یا جانی باشد.بر اساس قانون مالک خودرو یا کسی که خودرو در اختیار
+                            اوست باید اقدام به تهیه بیمه شخص ثالث نماید. (در این صورت، این شخص بیمه‌گذار نامیده می‌شود.)
+                        </p>
+                        <div>
+                            <span></span>
+                            <i class="fas fa-times-circle" onclick="showAnswer('#question-2')"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="content03" class="bime-info__tabcontent">
+                    <div class="bime-info__moshavere flex r-reverse align-stretch justi-around">
+                        <div>
+                            <form class="flex column align-center">
+                                <input name="name" type="text" placeholder="نام">
+                                <input name="family" type="text" placeholder="نام خانوادگی">
+                                <input name="phone" type="text" placeholder="شماره تلفن">
+                                <textarea rows="4" placeholder="توضیحات"></textarea>
+                                <button type="submit">تایید</button>
+                            </form>
+                        </div>
+                        <div>
+                            <img src="img/moshavere.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- فوتر دسکتاپ -->
+        <div class="footer__top-part flex r-reverse justi-center align-center">
+            <img srcset="img/kisspng-logo-coreldraw-cdr-cli_h.png 1x,img/kisspng-logo-coreldraw-cdr-cli_h@2x.png  2x"
+                alt="big logo" class="footer__logo">
+        </div>
+        <div class="footer__main-desktop flex r-reverse justi-around align-start">
+            <div class="footer__right-side">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه درمان تکمیلی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه موتور سیکلت</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه عمر</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link"> بیمه مسافرتی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه آتش سوزی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه بدنه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه شخص ثالث</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-side flex column justi-around align-center">
+                <div class="footer__main-logo flex r-reverse justi-around align-center">
+                    <img srcset="img/_temp-logo-samandehi.png 1x, img/_temp-logo-samandehi@2x.png 2x"
+                        class="footer__main-logo-photo">
+                    <img srcset="img/_temp-logo-enamad.png 1x, img/_temp-logo-enamad@2x.png 2x"
+                        class="footer__main-logo-photo">
+                </div>
+                <div class="footer__social-logo flex r-reverse justi-around align-center">
+                    <a href="#" class="footer__social-logo-box"><img srcset="img/twitter.png 1x,img/twitter@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img srcset="img/twitter.png 1x,img/twitter@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img
+                            srcset="img/instagram-sketched.png 1x,img/instagram-sketched@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img srcset="img/telegram.png 1x,img/telegram@2x.png 2x"></a>
+                </div>
+            </div>
+            <div class="footer__left-side">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link"> تماس با ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">درباره ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">سوالات متداول</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">شرایط و قوانین</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">ورود به پنل</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- فوتر موبایل -->
+        <div class="footer__main-mobile flex r-reverse justi-around align-center">
+            <div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">خانه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با بیمسا</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">خانه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با بیمسا</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                </ul>
+            </div>
+            <div class="footer__main-logo-mobile flex r-reverse justi-around align-center">
+                <img srcset="img/_temp-logo-samandehi.png 1x, img/_temp-logo-samandehi@2x.png 2x"
+                    class="footer__main-logo-mobile-photo">
+                <img srcset="img/_temp-logo-enamad.png 1x, img/_temp-logo-enamad@2x.png 2x"
+                    class="footer__main-logo-mobile-photo">
+            </div>
+        </div>
+        <div class="footer__legal">
+            <p class="footer__legal-text">تمام حقوق این سایت متعلق به شرکت بیمسا است</p>
+        </div>
+    </footer>
+</body>
+<script>
+    $('.bime-info__tabcontent').hide(); var activeTab = $(".tabs").find('a.label-active').data('trigger');
+    $('#' + activeTab).show();
+
+    $('.tabs>a').on('click', function () {
+        var tabId = $(this).data('trigger');
+        $('#' + tabId).show();
+        $('.bime-info__tabcontent:not(#' + tabId + ')').hide();
+        $(this).addClass('label-active');
+        $(this).siblings('a').removeClass('label-active');
+    });
+
+    $('.form-specs__content').hide(); var activeLabel = $(".tab").find('a.active').data('trigger');
+    $('#' + activeLabel).show();
+
+    $('.tab>a').on('click', function () {
+        var labelId = $(this).data('trigger');
+        $('#' + labelId).show();
+        $('.form-specs__content:not(#' + labelId + ')').hide();
+        $(this).addClass('active');
+        $(this).siblings('a').removeClass('active');
+    });
+
+
+    $('.select2').select2({
+    });
+
+</script>
+
+</html>
