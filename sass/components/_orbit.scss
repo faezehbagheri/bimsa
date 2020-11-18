@@ -311,22 +311,22 @@
         &--right{
             left: 60%;
             top: 30%;
-            @include set-background(url(../../img/right.png) , cover);
+            @include set-background(url(../../assets/img/right.png) , cover);
 
             &:hover{
                 cursor: pointer;
-                background-image: linear-gradient(rgba($color-yellow, 0.6), rgba($color-yellow, 0.6)), url(../../img/right.png);
+                background-image: linear-gradient(rgba($color-yellow, 0.6), rgba($color-yellow, 0.6)), url(../../assets/img/right.png);
             }
         }
 
         &--left{
             left: -37%;
             top: 30%;
-            @include set-background(url(../../img/left.png) , cover);
+            @include set-background(url(../../assets/img/left.png) , cover);
 
             &:hover{
                 cursor: pointer;
-                background-image: linear-gradient(rgba($color-yellow, 0.6), rgba($color-yellow, 0.6)), url(../../img/left.png);
+                background-image: linear-gradient(rgba($color-yellow, 0.6), rgba($color-yellow, 0.6)), url(../../assets/img/left.png);
             }
         }
     }
