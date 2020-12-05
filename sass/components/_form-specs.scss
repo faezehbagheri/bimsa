@@ -195,43 +195,43 @@
 
 
 
-.container {
-    // padding: 32px;
-    margin: 0 auto;
-    width: 28rem;
+// .container {
+//     // padding: 32px;
+//     margin: 0 auto;
+//     width: 28rem;
 
-    .select2 {
-        width: 100% !important;
-        text-align: right !important;
-        direction: rtl !important;
+//     .select2 {
+//         // width: 100% !important;
+//         text-align: right !important;
+//         direction: rtl !important;
 
-    }
+//     }
 
-    .select2-container {
-        .select2-selection--single {
-            height: 5rem;
-            font-size: 1.6rem; 
-            position: relative;
-            outline: none;
-            border: none;
+//     .select2-container {
+//         .select2-selection--single {
+//             height: 5rem;
+//             font-size: 1.6rem; 
+//             position: relative;
+//             outline: none;
+//             border: none;
 
-            .select2-selection__rendered {
-                line-height: 5rem;
-            }
+//             .select2-selection__rendered {
+//                 line-height: 5rem;
+//             }
 
-            .select2-selection__arrow {
-                top: 50%;
-                right: 82%;
-                transform: translate(-82%, -50%);
-            }
+//             .select2-selection__arrow {
+//                 top: 50%;
+//                 right: 82%;
+//                 transform: translate(-82%, -50%);
+//             }
 
-            .select2-container--default {
-                .select2-results > .select2-results__options {
-                    -webkit-overflow-scrolling: touch; /* use momentum scrolling */
-                    text-align: right !important;
-                    direction: rtl !important;
-                }
-            }
-        }
-    }
-}
+//             .select2-container--default {
+//                 .select2-results > .select2-results__options {
+//                     -webkit-overflow-scrolling: touch; /* use momentum scrolling */
+//                     text-align: right !important;
+//                     direction: rtl !important;
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
     <script src="assets/js/jquery.js"></script>
+    <script src="/assets/js/select2.full.js"></script> 
+    <link rel="stylesheet" href="/assets/css/select2.css">
+
     <script type="text/javascript" src="assets/js/function.js"></script>
     <script type="text/javascript" src="assets/js/jqueryFunction.js"></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/all.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Bimsa</title>
 </head>
@@ -122,45 +121,45 @@
 
         <!-- باکس وسط هدر و معرفی بیمه ها -->
         <div class="header__main flex justi-center align-stretch wrap">
-            <div class="header__item flex column justi-end align-center">
+            <a href="#" class="header__item flex column justi-end align-center">
                 <img srcset="assets/img/Mask_Group_16.png 1x,assets/img/Mask_Group_16@2x.png 2x" alt="bime atash soozi"
                     class="header__photo">
                 <span class="header__text">بیمه آتش سوزی</span>
-            </div>
-            <div class="header__item flex column justi-end align-center">
+            </a>
+            <a href="#" class="header__item flex column justi-end align-center">
                 <img srcset="assets/img/Mask_Group_14.png 1x,assets/img/Mask_Group_14@2x.png 2x" alt="bime mosaferti"
                     class="header__photo">
                 <span class="header__text">بیمه مسافرتی</span>
-            </div>
-            <div class="header__item flex column justi-end align-center">
+            </a>
+            <a href="#" class="header__item flex column justi-end align-center">
                 <img srcset="assets/img/Mask_Group_13.png 1x,assets/img/Mask_Group_13@2x.png 2x" alt="bime badane"
                     class="header__photo">
                 <span class="header__text">بیمه بدنه</span>
-            </div>
-            <div class="header__item flex column justi-end align-center">
+            </a>
+            <a href="#" class="header__item flex column justi-end align-center">
                 <img srcset="assets/img/Mask_Group_11.png 1x,assets/img/Mask_Group_11@2x.png 2x" alt="bime shakhs sales"
                     class="header__photo">
                 <span class="header__text">بیمه شخص ثالث</span>
-            </div>
-            <div class="header__item flex column justi-end align-center">
+            </a>
+            <a href="#" class="header__item flex column justi-end align-center">
                 <img srcset="assets/img/Mask_Group_9.png 1x,assets/img/Mask_Group_9@2x.png 2x" alt="bime darman va corona"
                     class="header__photo">
                 <span class="header__text">بیمه درمان و کرونا</span>
-            </div>
-            <div class="header__item flex column justi-end align-center">
+            </a>
+            <a href="#" class="header__item flex column justi-end align-center">
                 <img srcset="assets/img/Mask_Group_15.png 1x,assets/img/Mask_Group_15@2x.png 2x" alt="bime sazmani"
                     class="header__photo">
                 <span class="header__text">بیمه سازمانی</span>
-            </div>
-            <div class="header__item flex column justi-end align-center">
+            </a>
+            <a href="#" class="header__item flex column justi-end align-center">
                 <img srcset="assets/img/Mask_Group_12.png 1x,assets/img/Mask_Group_12@2x.png 2x" alt="bime omr" class="header__photo">
                 <span class="header__text">بیمه عمر</span>
-            </div>
-            <div class="header__item flex column justi-end align-center">
+            </a>
+            <a href="#" class="header__item flex column justi-end align-center">
                 <img srcset="assets/img/Mask_Group_10.png 1x,assets/img/Mask_Group_10@2x.png 2x" alt="bime motor "
                     class="header__photo">
                 <span class="header__text">بیمه موتور سیکلت</span>
-            </div>
+            </a>
         </div>
     </header>
 
@@ -224,27 +223,76 @@
                         <form class="reminder__main flex r-reverse justi-around align-center wrap">
                             <div class="reminder__box flex column justi-around align-end">
                                 <label class="reminder__label">نوع بیمه</label>
-                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                                <div class="container">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+                                <!-- <label class="reminder__label">نوع بیمه</label>
+                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید"> -->
                             </div>
                             <div class="reminder__box flex column justi-around align-end">
                                 <label class="reminder__label">نحوه تکرار</label>
-                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                                <div class="container">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+                                <!-- <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید"> -->
                             </div>
                             <div class="reminder__box flex column justi-around align-end">
                                 <label class="reminder__label">توضیحات یادآور</label>
-                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                                <div class="container">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+                                <!-- <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید"> -->
                             </div>
                             <div class="reminder__box flex column justi-around align-end">
                                 <label class="reminder__label">تاریخ سررسید</label>
-                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                                <div class="container">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+                                <!-- <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید"> -->
                             </div>
                             <div class="reminder__box flex column justi-around align-end">
                                 <label class="reminder__label">استان</label>
-                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                                <div class="container">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تهران </option>
+                                        <option value=""> مرکزی </option>
+                                        <option value="">فارس</option>
+                                        <option value=""> اصفهان </option>
+                                    </select>
+                                </div>
+                                <!-- <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید"> -->
                             </div>
                             <div class="reminder__box flex column justi-around align-end">
                                 <label class="reminder__label">شهر</label>
-                                <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید">
+                                <div class="container">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تهران </option>
+                                        <option value=""> مرکزی </option>
+                                        <option value="">فارس</option>
+                                        <option value=""> اصفهان </option>
+                                    </select>
+                                </div>
+                                <!-- <input type="text" class="reminder__input" placeholder="نوع بیمه را انتخاب کنید"> -->
                             </div>
                             <button class="reminder__btn u-margin-top-medium u-margin-bottom-medium">ثبت</button>
                         </form>
