@@ -24,3 +24,22 @@ html {
 body {
     box-sizing: border-box;
 }
+
+button{
+    cursor: pointer;
+}
+
+.red{color:$red !important;}
+.blue{color:$color-primary !important;}
+.green{color:$green !important;}
+.yellow{color:$yellow !important;}
+.white{color: white !important;}
+.orange{color:$orange !important;}
+
+
+.bg-red{background-color:$red !important;}
+.bg-blue{background-color:$color-primary !important;}
+.bg-green{background-color:$green !important;}
+.bg-yellow{background-color:$yellow !important;}
+.bg-white{background-color: white !important;}
+.bg-orange{background-color:$orange !important;}

@@ -69,7 +69,7 @@
     }
 
     &__tabs {
-        // width: 30%;
+        width: 30%;
         margin-left: 2rem;
         height: 42rem;
 
@@ -187,6 +187,14 @@
             background-color: #fff;
           }
         
+    }
+
+    &.result-page{
+        width: 70%;
+        background-color: white !important;
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: .5);
+        height: 23rem;
+        border-radius: 3rem;
     }
 }
 .active {

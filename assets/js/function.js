@@ -57,6 +57,23 @@ function rightState(){
     }
 }
 
+var show_aghsat= false;
+var show_info= false;
 function showAnswer(selector){
     document.querySelector(selector).classList.toggle("show-answer");
+}
+// var
+function showInfo(selector){
+    show_info = !show_info;
+    document.querySelector(selector).classList.toggle('show-info');
+    if(show_info && !show_aghsat){
+        document.querySelector(selector).classList.remove('show-aghsat');
+    }
+    if(!show_info && show_aghsat){
+        document.querySelector(selector).classList.remove('show-aghsat');
+    }
+}
+function showAghsat(selector){
+    show_aghsat=true;
+    document.querySelector(selector).classList.add('show-aghsat');
 }

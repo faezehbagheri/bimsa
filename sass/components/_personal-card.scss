@@ -1,0 +1,126 @@
+.personal-card{
+    padding: 2rem 5rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 0 5px rgba($color: $color-grey-dark, $alpha: .5);
+    margin-bottom: 3rem;
+    color: $color-grey-dark-2;
+
+
+    i{
+        font-size: 1.8rem;
+        color: $color-yellow-light;
+        // margin-top: 1rem;
+    }
+
+    img{
+        height: 14rem;
+        width:  14rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+
+    p{
+        font-size: 1.8rem;
+        margin: 1rem;
+
+        i{
+            color: $color-grey-dark;
+            margin-left: 1.5rem;
+        }
+
+        span{
+            color: red;
+            margin-right: 1rem;
+        }
+    }
+
+    span{
+        font-size: 1.8rem;
+    }
+
+    button.btn{
+        width: 16rem;
+        height: 6rem;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        color: white;
+    }
+
+    button{
+       background-color: transparent;
+       border: none;
+       outline: none;
+       color: $color-yellow-light;
+       font-size: 1.6rem;
+       
+       i{margin-right: 1rem;}
+
+       &::after{display: none;}
+    }
+
+    div.buttons{
+        transition: all .4s ease;
+    }
+
+    div.info , div.aghsat{
+        height: 0;
+        overflow: hidden;
+        transition: all .4s ease;
+    }
+    
+    div.container{
+        overflow: hidden;
+        border-radius: 2rem;
+        background-color: white;
+        box-shadow: 0 0 5px rgba($color: $color-grey-dark, $alpha: .5);
+        margin: 1rem 2rem;
+        transition: all .4s ease;
+
+        span{color: red; font-size: 1.5rem;}
+        p{font-size: 1.5rem;}
+    }
+}
+
+.show-info{
+    div.info{
+        height: 13rem;
+        margin: 2rem 0;
+    }
+
+    div.buttons{
+        position: relative;
+        transform: translateY(50%);
+    }
+
+    button.more-info{
+        visibility: hidden;
+
+        &::after{
+            content: "بستن"; 
+            visibility: visible;
+            display: block;
+            position: relative;
+            left: -40%;
+            // position: absolute;
+        }
+    }
+}
+
+.show-aghsat{
+    div.aghsat{
+        height: 15rem;
+        margin: 2rem 0;
+    }
+    div.buttons{
+        position: relative;
+    }
+}

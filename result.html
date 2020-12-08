@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    
+    <script src="assets/js/jquery.js"></script>
+    <script src="/assets/js/select2.full.js"></script> 
+    <link rel="stylesheet" href="/assets/css/select2.css">
+
+    <script type="text/javascript" src="assets/js/function.js"></script>
+    <script type="text/javascript" src="assets/js/jqueryFunction.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    
+    <title>Bimsa</title>
+</head>
+<body>
+    
+    <header class="header flex column justi-start align-center" id="header">
+        <!-- منو دسکتاپ -->
+        <nav class="navigation flex r-reverse justi-around align-center">
+            <div class="navigation__hamberger-menu">
+                <a href="#menu"><img src="assets/img/menu.png" alt="logo" class="navigation__menu-logo"></a>
+            </div>
+            <div class="navigation__main-logo flex r-reverse justi-center align-center">
+                <img srcset="assets/img/kisspng-logo-coreldraw-cdr-cli_h.png 1x,assets/img/kisspng-logo-coreldraw-cdr-cli_h@2x.png 2x" alt="logo" class="navigation__logo">
+                <span class="bimsa">بیمسا</span>
+            </div>
+            <div class="navigation__nav">
+                <ul class="navigation__list flex r-reverse justi-between align-center">
+                    <li class="navigation__item"><a href="#" class="navigation__link">انواع بیمه ها</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">فروش</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">بیمه های همکار</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">بلاگ</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="navigation__user flex r-reverse justi-center align-center">
+                <img srcset="assets/img/person.png 1x,assets/img/person@2x.png 2x" alt="user photo" class="navigation__user-photo">
+                <span class="navigation__text">حساب کاربری</span>
+            </div>
+            <img src="assets/img/headphone.png" alt="logo" class="navigation__headphone-logo">
+        </nav>
+        <!-- منو موبایل -->
+        <nav class="navigation-mobile flex column justi-around align-end " id="menu">
+            <div class="navigation-mobile__content">
+                <div class="navigation-mobile__header">
+                    <a href="#header"><img class="navigation-mobile__close" src="assets/img/close (1).png"></a>
+                    <button class="navigation-mobile__login-btn">ورود/عضویت</button>
+                </div>
+                <div class="navigation-mobile__nav">
+                    <ul class="navigation-mobile__list">
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Mask_Group_11.png 1x,assets/img/Mask_Group_11@2x.png 2x" alt="bime shakhs sales"><a class="navigation-mobile__link" href="#">بیمه شخص ثالث</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Mask_Group_13.png 1x,assets/img/Mask_Group_13@2x.png 2x" alt="bime badane"><a class="navigation-mobile__link" href="#">بیمه بدنه</a></li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Mask_Group_14.png 1x,assets/img/Mask_Group_14@2x.png 2x" alt="bime mosaferti"><a class="navigation-mobile__link" href="#">بیمه مسافرتی</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Mask_Group_9.png 1x,assets/img/Mask_Group_9@2x.png 2x" alt="bime darman va corona"><a class="navigation-mobile__link" href="#">بیمه درمان و کرونا</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Mask_Group_12.png 1x,assets/img/Mask_Group_12@2x.png 2x" alt="bime omr"><a class="navigation-mobile__link" href="#">بیمه عمر</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Mask_Group_10.png 1x,assets/img/Mask_Group_10@2x.png 2x" alt="bime motor "><a class="navigation-mobile__link" href="#">بیمه‌ موتور سیکلت</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Mask_Group_15.png 1x,assets/img/Mask_Group_15@2x.png 2x" alt="bime sazmani"><a class="navigation-mobile__link" href="#">بیمه‌ سازمانی</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Mask_Group_16.png 1x,assets/img/Mask_Group_16@2x.png 2x" alt="bime atash soozi"><a class="navigation-mobile__link" href="#">بیمه‌ آتش سوزی</a>
+                        </li>
+                        <hr class="navigation-mobile__separator">
+                        <li class="navigation-mobile__item  flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/024---Friendship.png 1x,assets/img/024---Friendship@2x.png 2x" alt="bime motor "><a class="navigation-mobile__link" href="#">بیمه های همکار</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/Page-1.png 1x,assets/img/Page-1@2x.png 2x" alt="bime sazmani"><a class="navigation-mobile__link" href="#">وبلاگ</a>
+                        </li>
+                        <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                            <img class="navigation-mobile__icon" srcset="assets/img/work.png 1x,assets/img/work@2x.png 2x" alt="bime atash soozi"><a class="navigation-mobile__link" href="#">همکاری با بیمسا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- دایره ثابت مربوط به تمدید -->
+    <a href="#" class="fixed-circle fixed-circle--left flex column justi-center align-center">
+        <img srcset="assets/img/service4.png 1x,assets/img/service4@2x.png 2x" alt="tamdid" class="fixed-circle__extension-photo">
+        <span class="fixed-circle__extension-text">تمدید</span>
+    </a>
+    <!-- دایره ثابت مربوط به گفتگو با ما -->
+    <a href="#" class="fixed-circle fixed-circle--right flex column justi-center align-center">
+        <img srcset="assets/img/service3.png 1x,assets/img/service3@2x.png 2x" alt="coverstion" class="fixed-circle__coverstion-photo">
+        <span class="fixed-circle__coverstion-text">گفتگو با ما</span>
+    </a>
+    
+    <main>
+        <div class="section flex column align-center" style="padding: 8rem 0;">
+        <div class="form-specs result-page" style="margin-bottom: 5rem;">
+            <h2>بیمه شخص ثالث</h2>
+            <div class="flex r-reverse align-center justi-center">
+                <div style="width: 90%;" class="flex">
+                    <div class="reminder__box flex column justi-around align-end">
+                        <label class="reminder__label">نوع بیمه</label>
+                        <div class="container">
+                            <select class="select2" name="specialty">
+                                <option value=""> تخصص </option>
+                                <option value=""> آپروتینین </option>
+                                <option value="">آتراکوریوم</option>
+                                <option value=""> آتروپین </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reminder__box flex column justi-around align-end">
+                        <label class="reminder__label">نوع بیمه</label>
+                        <div class="container">
+                            <select class="select2" name="specialty">
+                                <option value=""> تخصص </option>
+                                <option value=""> آپروتینین </option>
+                                <option value="">آتراکوریوم</option>
+                                <option value=""> آتروپین </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reminder__box flex column justi-around align-end">
+                        <label class="reminder__label">نوع بیمه</label>
+                        <div class="container">
+                            <select class="select2" name="specialty">
+                                <option value=""> تخصص </option>
+                                <option value=""> آپروتینین </option>
+                                <option value="">آتراکوریوم</option>
+                                <option value=""> آتروپین </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reminder__box flex column justi-around align-end">
+                        <label class="reminder__label">نوع بیمه</label>
+                        <div class="container">
+                            <select class="select2" name="specialty">
+                                <option value=""> تخصص </option>
+                                <option value=""> آپروتینین </option>
+                                <option value="">آتراکوریوم</option>
+                                <option value=""> آتروپین </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex r-reverse justi-between align-start" style="width: 70%; margin-top: 10rem;">
+            <div class="filter flex column align-center">
+                <div class="filter__result-count flex justi-center">
+                    تعداد نتایج 20
+                </div>
+                <div class="filter__main flex column align-center">
+                    <h3>تغییر پوشش مالی</h3>
+                    <img src="/assets/img/Mask_Group_11@2x.png">
+                    <input type="range">
+                    <p>تعهد مالی :  <span>220 میلیون تومان</span></p>
+                    <div class="filter__checkbox flex column align-end">
+                        <div class="flex align-center">
+                            <input id="bime-iran" type="checkbox">
+                            <label for="bime-iran" class="flex r-reverse align-center">
+                                <div></div>
+                                <img src="/assets/img/ID7.png">
+                                <p>بیمه ایران</p>
+                            </label>
+                        </div>
+                        <div class="flex align-center">
+                            <input id="bime-asia" type="checkbox">
+                            <label for="bime-asia" class="flex r-reverse align-center">
+                                <div></div>
+                                <img src="/assets/img/ID3.png">
+                                <p>بیمه آسیا</p>
+                            </label>
+                        </div>
+                        <div class="flex align-center">
+                            <input id="bime-mellat" type="checkbox">
+                            <label for="bime-mellat" class="flex r-reverse align-center">
+                                <div></div>
+                                <img src="/assets/img/ID11.png">
+                                <p>بیمه ملت</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="result flex column">
+                <div class="result__filter flex r-reverse align-center justi-around">
+                    <a class="flex align-center r-reverse active" href="#">ارزان ترین <i class="fas fa-caret-left"></i></a>
+                    <a class="flex align-center r-reverse" href="#">گران ترین<i class="fas fa-caret-left"></i></a>
+                    <a class="flex align-center r-reverse" href="#">محبوب ترین<i class="fas fa-caret-left"></i></a>
+                    <a class="flex align-center r-reverse" href="#">محبوب ترین<i class="fas fa-caret-left"></i></a>
+                    <a class="flex align-center r-reverse" href="#">محبوب ترین<i class="fas fa-caret-left"></i></a>
+                </div>
+                <div class="personal-card flex column align-center" id="card-1">
+                    <div class="flex r-reverse justi-between align-center" style="width: 100%;">
+                        <div class="flex column align-center">
+                            <img src="/assets/img/ID11@2x.png">
+                            <h3>بیمه دانا</h3>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex column align-end">
+                            <p class="flex r-reverse align-center"><i class="fas fa-clock"></i>زمان پاسخگویی</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-home"></i>33 شعبه</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-smile"></i>رضایت مشتری:  %77</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-dollar-sign"></i>خسارت سیار <span>ندارد</span></p>
+                        </div>
+                        <div class="buttons flex column align-center">
+                            <span>2,752,000 تومان</span>
+                            <button class="bg-blue btn">خرید نقدی</button>
+                            <button class="bg-green btn" onclick=" showAghsat('#card-1')">خرید اقساطی</button>
+                        </div>
+                    </div>
+                    <div class="info flex r-reverse justi-start align-center" style="width: 100%;">
+                        <div class="flex column align-end">
+                            <p>نرخ پایه بیمه شخص ثالث: 1,968,700 تومان</p>
+                            <p>نرخ پایه حوادث سرنشین : 231,000 تومان                            </p>
+                            <p>نرخ مازاد مالی : تومان</p>
+                            <p>اضافه نرخ خسارت: تومان</p>
+                            <p>کهنگی: تومان</p>
+                        </div>
+                        <div class="flex column align-end">
+                            <p>میزان تخفیف ارائه شده: %0</p>
+                            <p>اضافه نرخ کاربری: تومان</p>
+                            <p>تخفیف عدم خسارت: تومان</p>
+                            <p>روز جریمه دیر کرد: تومان</p>
+                            <p>در صد تخفیف عدم خسارت: %1</p>
+                        </div>
+                    </div>
+                    <div class="aghsat flex r-reverse justi-around align-center" style="width: 80%;">
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                    </div>
+                    <button class="more-info flex align-center" onclick=" showInfo('#card-1')"><i class="fas fa-angle-down"></i>اطلاعات بیشتر</button>
+                </div>
+                <div class="personal-card flex column align-center">
+                    <div class="flex r-reverse justi-between align-center" style="width: 100%;">
+                        <div class="flex column align-center">
+                            <img src="/assets/img/ID11@2x.png">
+                            <h3>بیمه دانا</h3>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex column align-end">
+                            <p class="flex r-reverse align-center"><i class="fas fa-clock"></i>زمان پاسخگویی</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-home"></i>33 شعبه</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-smile"></i>رضایت مشتری:  %77</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-dollar-sign"></i>خسارت سیار <span>ندارد</span></p>
+                        </div>
+                        <div class="buttons flex column align-center">
+                            <span>2,752,000 تومان</span>
+                            <button class="bg-blue btn">خرید نقدی</button>
+                            <button class="bg-green btn">خرید اقساطی</button>
+                        </div>
+                    </div>
+                    <div class="info flex r-reverse justi-start align-center" style="width: 100%;">
+                        <div class="flex column align-end">
+                            <p>نرخ پایه بیمه شخص ثالث: 1,968,700 تومان</p>
+                            <p>نرخ پایه حوادث سرنشین : 231,000 تومان                            </p>
+                            <p>نرخ مازاد مالی : تومان</p>
+                            <p>اضافه نرخ خسارت: تومان</p>
+                            <p>کهنگی: تومان</p>
+                        </div>
+                        <div class="flex column align-end">
+                            <p>میزان تخفیف ارائه شده: %0</p>
+                            <p>اضافه نرخ کاربری: تومان</p>
+                            <p>تخفیف عدم خسارت: تومان</p>
+                            <p>روز جریمه دیر کرد: تومان</p>
+                            <p>در صد تخفیف عدم خسارت: %1</p>
+                        </div>
+                    </div>
+                    <div class="aghsat flex r-reverse justi-around align-center" style="width: 80%;">
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                    </div>
+                    <button class="more-info flex align-center"><i class="fas fa-angle-down"></i>اطلاعات بیشتر</button>
+                </div>
+                <div class="personal-card flex column align-center">
+                    <div class="flex r-reverse justi-between align-center" style="width: 100%;">
+                        <div class="flex column align-center">
+                            <img src="/assets/img/ID11@2x.png">
+                            <h3>بیمه دانا</h3>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex column align-end">
+                            <p class="flex r-reverse align-center"><i class="fas fa-clock"></i>زمان پاسخگویی</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-home"></i>33 شعبه</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-smile"></i>رضایت مشتری:  %77</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-dollar-sign"></i>خسارت سیار <span>ندارد</span></p>
+                        </div>
+                        <div class="buttons flex column align-center">
+                            <span>2,752,000 تومان</span>
+                            <button class="bg-blue btn">خرید نقدی</button>
+                            <button class="bg-green btn">خرید اقساطی</button>
+                        </div>
+                    </div>
+                    <div class="info flex r-reverse justi-start align-center" style="width: 100%;">
+                        <div class="flex column align-end">
+                            <p>نرخ پایه بیمه شخص ثالث: 1,968,700 تومان</p>
+                            <p>نرخ پایه حوادث سرنشین : 231,000 تومان                            </p>
+                            <p>نرخ مازاد مالی : تومان</p>
+                            <p>اضافه نرخ خسارت: تومان</p>
+                            <p>کهنگی: تومان</p>
+                        </div>
+                        <div class="flex column align-end">
+                            <p>میزان تخفیف ارائه شده: %0</p>
+                            <p>اضافه نرخ کاربری: تومان</p>
+                            <p>تخفیف عدم خسارت: تومان</p>
+                            <p>روز جریمه دیر کرد: تومان</p>
+                            <p>در صد تخفیف عدم خسارت: %1</p>
+                        </div>
+                    </div>
+                    <div class="aghsat flex r-reverse justi-around align-center" style="width: 80%;">
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                    </div>
+                    <button class="more-info flex align-center"><i class="fas fa-angle-down"></i>اطلاعات بیشتر</button>
+                </div>
+                <div class="personal-card flex column align-center">
+                    <div class="flex r-reverse justi-between align-center" style="width: 100%;">
+                        <div class="flex column align-center">
+                            <img src="/assets/img/ID11@2x.png">
+                            <h3>بیمه دانا</h3>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex column align-end">
+                            <p class="flex r-reverse align-center"><i class="fas fa-clock"></i>زمان پاسخگویی</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-home"></i>33 شعبه</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-smile"></i>رضایت مشتری:  %77</p>
+                            <p class="flex r-reverse align-center"><i class="fas fa-dollar-sign"></i>خسارت سیار <span>ندارد</span></p>
+                        </div>
+                        <div class="buttons flex column align-center">
+                            <span>2,752,000 تومان</span>
+                            <button class="bg-blue btn">خرید نقدی</button>
+                            <button class="bg-green btn">خرید اقساطی</button>
+                        </div>
+                    </div>
+                    <div class="info flex r-reverse justi-start align-center" style="width: 100%;">
+                        <div class="flex column align-end">
+                            <p>نرخ پایه بیمه شخص ثالث: 1,968,700 تومان</p>
+                            <p>نرخ پایه حوادث سرنشین : 231,000 تومان                            </p>
+                            <p>نرخ مازاد مالی : تومان</p>
+                            <p>اضافه نرخ خسارت: تومان</p>
+                            <p>کهنگی: تومان</p>
+                        </div>
+                        <div class="flex column align-end">
+                            <p>میزان تخفیف ارائه شده: %0</p>
+                            <p>اضافه نرخ کاربری: تومان</p>
+                            <p>تخفیف عدم خسارت: تومان</p>
+                            <p>روز جریمه دیر کرد: تومان</p>
+                            <p>در صد تخفیف عدم خسارت: %1</p>
+                        </div>
+                    </div>
+                    <div class="aghsat flex r-reverse justi-around align-center" style="width: 80%;">
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                        <div class="container flex column align-center justi-around">
+                            <p>پیش پرداخت</p>
+                            <span>نقدی</span>
+                            <p>520,000 تومان</p>
+                        </div>
+                    </div>
+                    <button class="more-info flex align-center"><i class="fas fa-angle-down"></i>اطلاعات بیشتر</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <!-- فوتر دسکتاپ -->
+        <div class="footer__top-part flex r-reverse justi-center align-center">
+            <img srcset="assets/img/kisspng-logo-coreldraw-cdr-cli_h.png 1x,assets/img/kisspng-logo-coreldraw-cdr-cli_h@2x.png  2x"
+                alt="big logo" class="footer__logo">
+        </div>
+        <div class="footer__main-desktop flex r-reverse justi-around align-start">
+            <div class="footer__right-side">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه درمان تکمیلی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه موتور سیکلت</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه عمر</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link"> بیمه مسافرتی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه آتش سوزی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه بدنه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">بیمه شخص ثالث</a></li>
+                </ul>
+            </div>
+            <div class="footer__center-side flex column justi-around align-center">
+                <div class="footer__main-logo flex r-reverse justi-around align-center">
+                    <img srcset="assets/img/_temp-logo-samandehi.png 1x, assets/img/_temp-logo-samandehi@2x.png 2x"
+                        class="footer__main-logo-photo">
+                    <img srcset="assets/img/_temp-logo-enamad.png 1x, assets/img/_temp-logo-enamad@2x.png 2x"
+                        class="footer__main-logo-photo">
+                </div>
+                <div class="footer__social-logo flex r-reverse justi-around align-center">
+                    <a href="#" class="footer__social-logo-box"><img srcset="assets/img/twitter.png 1x,assets/img/twitter@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img srcset="assets/img/twitter.png 1x,assets/img/twitter@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img
+                            srcset="assets/img/instagram-sketched.png 1x,assets/img/instagram-sketched@2x.png 2x"></a>
+                    <a href="#"class="footer__social-logo-box"><img srcset="assets/img/telegram.png 1x,assets/img/telegram@2x.png 2x"></a>
+                </div>
+            </div>
+            <div class="footer__left-side">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link"> تماس با ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">درباره ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با ما</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">سوالات متداول</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">شرایط و قوانین</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">ورود به پنل</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- فوتر موبایل -->
+        <div class="footer__main-mobile flex r-reverse justi-around align-center">
+            <div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">خانه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با بیمسا</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">خانه</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">همکاری با بیمسا</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">فرصت های شغلی</a></li>
+                </ul>
+            </div>
+            <div class="footer__main-logo-mobile flex r-reverse justi-around align-center">
+                <img srcset="assets/img/_temp-logo-samandehi.png 1x, assets/img/_temp-logo-samandehi@2x.png 2x"
+                    class="footer__main-logo-mobile-photo">
+                <img srcset="assets/img/_temp-logo-enamad.png 1x, assets/img/_temp-logo-enamad@2x.png 2x"
+                    class="footer__main-logo-mobile-photo">
+            </div>
+        </div>
+        <div class="footer__legal">
+            <p class="footer__legal-text">تمام حقوق این سایت متعلق به شرکت بیمسا است</p>
+        </div>
+    </footer>
+</body>
+
+</html>

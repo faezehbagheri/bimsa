@@ -3,6 +3,7 @@
     background: $color-grey-light-1;
     height: auto;
     padding-bottom: 10rem;
+    width: 100%;
 
     @include respond(big-desktop){ height: auto; }
     

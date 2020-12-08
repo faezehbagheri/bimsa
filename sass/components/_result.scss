@@ -1,0 +1,49 @@
+.result{
+    width: 74%;
+    // background-color: white;
+    // box-shadow: 0 0 5px rgba($color: #000000, $alpha: .5);
+
+    // & div{
+    //     height: 6rem;
+    //     width: 100%;
+    //     border-radius: 1rem;
+    //     background-color: white;
+    //     box-shadow: 0 0 5px rgba($color: $color-grey-dark, $alpha: .5);
+    // }
+
+    &__filter{
+        width: 100%;
+        padding: .7rem;
+        margin-bottom: 2rem;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 0 5px rgba($color: $color-grey-dark, $alpha: .5);
+        
+        
+        a,
+        a:link,
+        a:visited{
+            color: $color-grey-dark;
+            font-size: 1.8rem;
+            margin-left: 5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: all .3s ease;
+        }
+
+        a:hover,
+        a.active{
+            background-color: rgba($color: $color-primary, $alpha: .8);
+            color: white;
+
+            i{color: white;}
+        }
+
+        i{
+            color: $color-primary;
+            margin-right: 1rem;
+            font-size: 2.2rem;
+            transition: all .3s ease;
+        }
+    }
+}
