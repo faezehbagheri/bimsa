@@ -20,7 +20,8 @@ body {
   box-sizing: border-box; }
 
 button {
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .red {
   color: #E43F6F !important; }
@@ -994,6 +995,14 @@ input[type="range"] {
   .form-specs__checkbox input:checked + label:before {
     left: 2.5rem;
     background-color: #fff; }
+  .form-specs__inputs {
+    margin-top: 4rem;
+    padding: 0 5rem; }
+    .form-specs__inputs label {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #239DEA;
+      margin-right: 1rem; }
   .form-specs.result-page {
     width: 70%;
     background-color: white !important;
@@ -1585,7 +1594,7 @@ input[type="range"] {
   background-color: white;
   border-radius: 1rem; }
   .container .select2 {
-    width: 100%;
+    width: 100% !important;
     direction: rtl !important;
     height: 5rem;
     border: 1px solid #239DEA;
@@ -1614,6 +1623,9 @@ input[type="range"] {
       transform: translate(-82%, -50%); }
     .container .select2-container .select2-selection--single .select2-container--default .select2-results > .select2-results__options {
       -webkit-overflow-scrolling: touch; }
+
+.select2-results {
+  direction: rtl; }
 
 .select2-results__option {
   cursor: pointer;

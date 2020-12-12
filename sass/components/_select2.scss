@@ -5,7 +5,7 @@
     border-radius: 1rem;
 
     .select2 {
-        width: 100% ;
+        width: 100% !important;
         direction: rtl !important;
         height: 5rem;
         border: 1px solid $color-primary;
@@ -51,6 +51,9 @@
             }
         }
     }
+}
+.select2-results{
+    direction: rtl;
 }
 .select2-results__option{
     cursor: pointer;

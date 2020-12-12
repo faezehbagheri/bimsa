@@ -189,6 +189,18 @@
         
     }
 
+    &__inputs{
+        margin-top: 4rem;
+        padding: 0 5rem;
+        
+        label{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $color-primary;
+            margin-right: 1rem;
+        }
+    }
+
     &.result-page{
         width: 70%;
         background-color: white !important;
