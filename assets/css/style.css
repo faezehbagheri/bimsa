@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.steps > li.is-active:before, .steps > li.is-active ~ li:before {
+  content: counter(stepNum);
+  font-weight: 700; }
+
+.steps > li.is-active:after, .steps > li.is-active ~ li:after {
+  background-color: #B2B2B2; }
+
 *,
 *::after,
 *::before {
@@ -14,7 +21,8 @@ html {
       font-size: 48%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 button {
   cursor: pointer;
@@ -995,7 +1003,7 @@ input[type="range"] {
     left: 2.5rem;
     background-color: #fff; }
   .form-specs__inputs {
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 0 5rem; }
     .form-specs__inputs label {
       font-size: 1.5rem;
@@ -1633,3 +1641,53 @@ input[type="range"] {
   .select2-results__option:hover {
     background-color: #239DEA;
     color: white; }
+
+.steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  position: relative;
+  left: 2%;
+  direction: rtl;
+  z-index: 9;
+  margin-top: -1.5rem; }
+  .steps > li {
+    counter-increment: stepNum;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+    color: #57CC99;
+    font-size: 1.3rem; }
+    .steps > li i {
+      font-size: 1.7rem;
+      margin-left: 8px; }
+    .steps > li:before {
+      content: counter(stepNum);
+      display: block;
+      margin: 0 auto 4px;
+      background-color: #57CC99;
+      color: white;
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.8rem;
+      line-height: 3.8rem;
+      text-align: center;
+      font-weight: bold;
+      border: 2px solid #57CC99;
+      border-radius: 50%; }
+    .steps > li:after {
+      content: '';
+      height: 2px;
+      width: 100%;
+      background-color: #57CC99;
+      position: absolute;
+      top: 16px;
+      left: -50%;
+      z-index: -1; }
+    .steps > li:last-child:after {
+      display: none; }
+    .steps > li.is-active:before {
+      background-color: #57CC99;
+      border-color: #57CC99; }
+    .steps > li.is-active ~ li {
+      color: #808080; }
