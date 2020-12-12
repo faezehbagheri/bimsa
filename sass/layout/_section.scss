@@ -14,8 +14,9 @@
     // @include respond(smallest){ height: 175vh; }
 
     @include respond(phone){  
-        height: 250vh;
+        height: auto;
         background-color: #ffffff;
+        overflow-x: hidden;
     }
 
     &__wave-background{
@@ -90,8 +91,9 @@
             width: 90%;
             border-radius: 0%;
             box-shadow: none;
-            height: 245vh;
+            height: auto;
             animation: none;
+            margin-top: 0;
         }
     }
     
