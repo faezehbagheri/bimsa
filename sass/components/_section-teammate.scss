@@ -1,6 +1,7 @@
 .teammate{
     width: 100%;
     position: relative;
+    margin-top: 2rem;
 
     @include respond(phone){ 
         align-items: flex-end;
@@ -11,6 +12,7 @@
         @include respond(phone){ 
             font-size: 3.5rem;
             margin-right: 3rem;
+            margin-bottom: 5rem !important;
             color: $color-primary;
         }
     }
@@ -44,12 +46,12 @@
         font-size: 1.3rem;
         font-weight: 500;
         color: $color-grey-dark-2;
-        text-align: center;
+        direction: rtl;
+        text-align: justify;
         padding: 1rem 2rem;
 
         @include respond(phone){ 
             font-size: 1.7rem;
-            text-align: right !important;
         }
         @include respond(phone-small){ 
             font-size: 1.5rem;

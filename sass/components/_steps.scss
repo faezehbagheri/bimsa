@@ -3,17 +3,19 @@
     table-layout: fixed;
     width: 100%;
     position: relative;
-    left: 2%;
+    // left: 2%;
     direction: rtl;
     z-index: 9;
     margin-top: -1.5rem;
+
+    @include respond(phone){ margin-top: -2rem;}
 
     > li{
         counter-increment: stepNum;
         text-align: center;
         display: table-cell;
         position: relative;
-        color: $green;
+        color: $color-yellow-light;
         font-size: 1.3rem;
         
         i{
@@ -25,7 +27,7 @@
             content: counter(stepNum);
             display: block;
             margin: 0 auto 4px;
-            background-color: $green;
+            background-color: $color-yellow-light;
             color: white;
             width: 4rem;
             height: 4rem;
@@ -33,14 +35,14 @@
             line-height: 3.8rem;
             text-align: center;
             font-weight: bold;
-            border: 2px solid $green;
+            border: 2px solid $color-yellow-light;
             border-radius: 50%;
         }
         &:after{
             content: '';
             height: 2px;
             width: 100%;
-            background-color: $green;
+            background-color: $color-yellow-light;
             position: absolute;
             top: 16px;
             left: -50%;
@@ -55,16 +57,16 @@
         &.is-active{
             @extend %remain-steps;
             &:before{
-                background-color: $green;
-                border-color: $green;
+                background-color: $color-yellow-light;
+                border-color: $color-yellow-light;
             }
         
             ~ li{
                 color: #808080;
                 @extend %remain-steps;
                 &:before{
-                // background-color: $gray-light;
-                // border-color: $gray-light;
+                background-color: $color-grey-dark;
+                border-color: $color-grey-dark;
                 }
             }
         }

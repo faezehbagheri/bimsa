@@ -17,7 +17,7 @@
         font-size: 1.5rem;
         font-weight: 700;
 
-        @include respond(phone){font-size: 2rem;}
+        @include respond(phone){font-size: 2rem;height: 6rem;}
     }
     
     .select2-selection__choice{
@@ -27,7 +27,7 @@
     .select2-container {
 
         .select2-selection--single {
-            height: 90%;
+            height: 100%;
             position: relative;
             outline: none;
             border: none;
@@ -59,6 +59,8 @@
     cursor: pointer;
     font-size: 1.4rem;
     padding: 1rem;
+
+    @include respond(phone){font-size: 1.8rem;}
 
     &:hover{
         background-color: $color-primary ;

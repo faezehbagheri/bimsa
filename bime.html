@@ -128,15 +128,15 @@
                     <img src="assets/img/Group261.png">
                     <span>استعلام قیمت</span>
                     <nav class="form-specs__multipleTabs tab flex">
-                        <a data-trigger="marhale-2" class="flex align-center form-specs__left-link active"><i
+                        <a data-trigger="marhale-2" class="flex align-center form-specs__left-link "><i
                                 class="fas fa-angle-left"></i>مرحله بعد</a>
-                        <a data-trigger="marhale-1" class="flex align-center form-specs__right-link ">مرحله قبل<i
+                        <a data-trigger="marhale-1" class="flex align-center form-specs__right-link active">مرحله قبل<i
                                 class="fas fa-angle-right"></i></a>
                     </nav>
                 </div>
                 <!-- سوالات مربوط به بیمه  -->
                 <div class="form-specs__content flex r-reverse justi-around align-center" id="marhale-1">
-                    <div class="form-specs__tabs flex column align-center justi-around">
+                    <div class="form-specs__tabs flex column align-center justi-around wrap">
                         <div class="flex column align-end" style="width: 100%;">
                             <label>نوع وسیله نقلیه </label>
                             <div class="container">
@@ -257,8 +257,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-specs__content flex r-reverse justi-around align-end" id="marhale-2">
-                    <div class="form-specs__tabs flex r-reverse align-center justi-around wrap">                        
+                <div class="form-specs__content flex r-reverse justi-around align-end wrap" id="marhale-2">
+                    <!-- <div class="form-specs__tabs flex r-reverse align-center justi-around wrap">                        
                         <div class="flex column align-center justi-around " style="height: 100%;">
                             <div class="form-specs__checkbox flex r-reverse justi-start align-center" style="width: 100%;">
                                 <span>بیمه نامه خسارت دارد</span>
@@ -305,6 +305,54 @@
                                         <option value="94"> 2015-1394 </option>
                                     </select>
                                 </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="form-specs__tabs flex column align-center justi-around">
+                        <div class="form-specs__checkbox flex r-reverse justi-start align-center">
+                            <span>بیمه نامه خسارت دارد</span>
+                            <div>
+                                <input id="toggle" type="checkbox" />
+                                <label for="toggle"></label>
+                            </div>
+                        </div>
+                        <div class="flex column align-end" style="width: 100%;">
+                            <label>سال ساخت </label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="99" selected> 2020-1399</option>
+                                    <option value="98"> 2019-1398 </option>
+                                    <option value="97"> 2018-1397 </option>
+                                    <option value="96"> 2017-1396 </option>
+                                    <option value="95"> 2016-1395 </option>
+                                    <option value="94"> 2015-1394 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-end" style="width: 100%;">
+                            <label>سال ساخت </label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="99" selected> 2020-1399</option>
+                                    <option value="98"> 2019-1398 </option>
+                                    <option value="97"> 2018-1397 </option>
+                                    <option value="96"> 2017-1396 </option>
+                                    <option value="95"> 2016-1395 </option>
+                                    <option value="94"> 2015-1394 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-end" style="width: 100%;">
+                            <label>سال ساخت </label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="99" selected> 2020-1399</option>
+                                    <option value="98"> 2019-1398 </option>
+                                    <option value="97"> 2018-1397 </option>
+                                    <option value="96"> 2017-1396 </option>
+                                    <option value="95"> 2016-1395 </option>
+                                    <option value="94"> 2015-1394 </option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -402,7 +450,7 @@
                 <a href="#section-main" class='bime-info__link'><i class="fas fa-angle-down"></i></a>
                 <h2 class="heading-scondary u-margin-top-medium">بیمه شخص ثالث چیست؟</h2>
                 <nav class="bime-info__multipleTabs tabs u-margin-top-medium flex r-reverse align-center justi-around">
-                    <a data-trigger="content01" class="bime-info__label label-active">درباره بیمه شخص ثالث</a>
+                    <a data-trigger="content01" class="bime-info__label label-active">درباره بیمه‌</a>
                     <a data-trigger="content02" class="bime-info__label">سوالات متداول</a>
                     <a data-trigger="content03" class="bime-info__label">درخواست مشاوره</a>
                 </nav>
@@ -487,7 +535,7 @@
                                 <button type="submit">تایید</button>
                             </form>
                         </div>
-                        <div>
+                        <div class="photo">
                             <img src="assets/img/moshavere.png">
                         </div>
                     </div>

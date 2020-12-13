@@ -1,5 +1,10 @@
 .filter{
     width: 24%;
+
+    @include respond(phone){
+        width: 100%;
+        margin-bottom: 5rem;
+    }
     
     &__result-count{
         width: 100%;
@@ -23,21 +28,32 @@
         font-size: 1.6rem;
         color: rgba($color: $color-primary, $alpha: .6);
         margin-top: 3rem;
+
+        @include respond(phone){ font-size: 2rem;}
     }
 
     img{
         height: 10rem;
         width: 12rem;
+
+        @include respond(phone){ 
+            height: 12rem;
+            width: 14rem;
+        }
     }
 
     p{
         font-size: 1.6rem;
         color: $color-primary;
+
+        @include respond(phone){ font-size: 1.8rem;}
     }
 
     span{
         font-size: 1.4rem;
         color: $color-grey-dark;
+
+        @include respond(phone){ font-size: 1.6rem; }
     }
 
     &__checkbox{
@@ -53,11 +69,18 @@
             height: 7rem;
             width:  7rem;
             margin-left: 2.5rem;
+
+            @include respond(phone){ 
+                width: 8rem;
+                height: 8rem;
+            }
         }
 
         p{
             color: $color-grey-dark;
             font-size: 1.7rem;
+
+            @include respond(phone){ font-size: 2rem;}
         }
 
         input[type="checkbox"]{
@@ -103,16 +126,17 @@ input[type="range"] {
  */
 ::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 4rem; /* 1 */
+    width: 4rem; 
     height: 2.3rem;
     background: #fff;
     box-shadow: -100vw -20rem 0 100vw $color-yellow-light;
-    border: 2px solid $color-yellow; /* 1 */
+    border: 2px solid $color-yellow; 
     border-radius: 2rem;
 
+    @include respond(phone){box-shadow: -100vw -10rem 0 100vw $color-yellow-light;}
+
     &::after{
-        content: "ee";
-        color: pink;
+        content: "";
         font-size: 3rem;
     }
 }

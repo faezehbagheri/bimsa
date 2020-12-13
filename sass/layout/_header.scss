@@ -3,12 +3,12 @@
     
     position: relative;
 
-    @include respond(phone){ background-image: none; }
-
     &.homepage{
         height: 97vh;
         @include set-background(url(../../assets/img/ID625918.png), cover);
-        background-attachment: fixed;        
+        background-attachment: fixed; 
+
+        @include respond(phone){height: 87vh;}       
     }
 
     &__animation-logo{
@@ -51,7 +51,7 @@
         @include respond(phone){
             width: 85%;
             top: 2%;
-            height: 85%;
+            height: 78%;
             animation: increaseHeight 2s ease ;
         }
 
@@ -71,7 +71,9 @@
             }
         }
 
-        @include respond(phone){ width: 50%; }
+        @include respond(phone){
+            width: 50%;
+        }
     }
 
     &__photo{
@@ -89,7 +91,7 @@
         font-size: $default-font-size;
         font-weight: 700;
         color: $color-primary;
-        padding: 2.2rem 0;
+        margin: 2.2rem 0;
         transition: all .6s;
 
         animation: moveToBottom 1.9s ease-in-out 5.3s;
@@ -97,6 +99,7 @@
 
         @include respond(phone){
             animation: moveToBottom 1.9s ease-in-out ;
+            margin: 1rem;
         }
     }
 }

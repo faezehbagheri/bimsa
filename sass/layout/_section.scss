@@ -6,17 +6,10 @@
     width: 100%;
 
     @include respond(big-desktop){ height: auto; }
-    
-    // @include respond(tab-land){ height: 205vh; }
-
-    // @include respond(tab-port){ height: 190vh; }
-
-    // @include respond(smallest){ height: 175vh; }
 
     @include respond(phone){  
         height: auto;
         background-color: #ffffff;
-        overflow-x: hidden;
     }
 
     &__wave-background{
@@ -27,9 +20,6 @@
         background-repeat: no-repeat;
         margin-top: -2.8rem;
         position: absolute;
-
-
-        @include respond(phone){ display: none; }
     }
 
     &__center-elements{  
@@ -97,4 +87,14 @@
         }
     }
     
+
+    &__result{
+        width: 70%; 
+        margin-top: 10rem;
+
+        @include respond(phone){
+            flex-direction: column !important;
+            width: 90%;
+        }
+    }
 }
